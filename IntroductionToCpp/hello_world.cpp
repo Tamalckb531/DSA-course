@@ -1,8 +1,9 @@
 // hello.c
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main()
 {
-    printf("This is the code file  ");
+    cout << "Hello! This is Tamal" << endl;
     return 0;
 }
