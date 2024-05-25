@@ -1,15 +1,15 @@
-## Important notes for CPP basics
+# Important notes for CPP basics
 
-# variables and datatype:
+## variables and datatype:
 
 Number range in a variable : (-2^byte - 1) to (2^byte - 1)
-Here, byte is basically the occupied place of the variable
+Here, byte is basically the occupied place of the variable. <br/>
 
-let n = byte
-for integer, signed form : 2^(n-1) to 2^(n-1) - 1
-for integer, unsigned form : 0 to 2^n - 1
+let n = byte <br/>
+for integer, signed form : 2^(n-1) to 2^(n-1) - 1 <br/>
+for integer, unsigned form : 0 to 2^n - 1 <br/>
 
-# user input:
+## user input:
 
 1. cin.ignore(): It clears the input buffer, useful after using cin to prevent unexpected behavior when mixing different input methods.
 
