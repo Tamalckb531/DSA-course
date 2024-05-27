@@ -47,6 +47,8 @@ A special technique to solve problems. Here we take two variable and point one o
 3. Print left elem and increase the left, print right elem and decrease the right.
 4. Make a special case to handle left == right and print only one time.
 
+<hr/>
+
 ## Array 2
 
 **LeetCode 136 - singleNumber :**
@@ -65,6 +67,23 @@ we need to cancel out those numbers which comes more than one time. Doing XOR wi
 <i>TC and SC</i>
 
 1. Linear Loop so TC : O(n)
-1. Only one variable created so SC : O(1)
+2. Only one variable created so SC : O(1)
+
+**sort0and1 :**
+
+<i>Intuition :</i>
+
+We just need to count all the occurrence of 0 and 1 and then re-insert the two values in array according to their occurrence.
+
+<i>Approach: </i>
+
+1. Traverse the array with a for loop and count the zero and one.
+2. 0-zeroCount insert 0
+3. zeroCount-size insert 1
+
+<i>TC and SC</i>
+
+1. 3 Linear Loop so TC : O(n)+ O(n)+ O(n) = O(n)
+2. Only two variable created so SC : O(1)
 
 <hr/>
