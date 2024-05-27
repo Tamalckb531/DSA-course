@@ -90,4 +90,14 @@ We just need to count all the occurrence of 0 and 1 and then re-insert the two v
 
 Here we learn about the nested loop pattern and how they behave. Look at the notebook for more details
 
+**TwoSum :**
+
+<i>Question :</i>
+
+We need to find the pair of numbers in an array whose sum is equal to the target given
+
+<i>Approach :</i>
+
+Just like the pairPrint, we create two nested loop and on the inner loop we check the condition, arr[i] + arr[j] == target. We print the matched number.
+
 <hr/>
