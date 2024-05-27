@@ -47,4 +47,24 @@ A special technique to solve problems. Here we take two variable and point one o
 3. Print left elem and increase the left, print right elem and decrease the right.
 4. Make a special case to handle left == right and print only one time.
 
+## Array 2
+
+**LeetCode 136 - singleNumber :**
+
+<i>Intuition :</i>
+
+we need to cancel out those numbers which comes more than one time. Doing XOR with same elements give 0. So, XOR can solve the issue.
+
+<i>Approach: </i>
+
+1. Traverse the array with a for loop.
+2. Take a variable with init value 0
+3. Do XOR each element of the array with the ans .
+4. At the end it will cover only one times element.
+
+<i>TC and SC</i>
+
+1. Linear Loop so TC : O(n)
+1. Only one variable created so SC : O(1)
+
 <hr/>
