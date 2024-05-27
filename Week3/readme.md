@@ -86,4 +86,8 @@ We just need to count all the occurrence of 0 and 1 and then re-insert the two v
 1. 3 Linear Loop so TC : O(n)+ O(n)+ O(n) = O(n)
 2. Only two variable created so SC : O(1)
 
+**pairPrint :**
+
+Here we learn about the nested loop pattern and how they behave. Look at the notebook for more details
+
 <hr/>
