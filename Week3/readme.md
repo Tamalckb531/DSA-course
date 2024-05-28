@@ -111,4 +111,8 @@ We need to print all combination of any three element in one array
 Create three nested loop and print for each index in inner most loop.
 We can also track how many combination printed by using a count variable and increasing it on the each inner most loop iteration. The time complexity will be O(n^3) and space complexity will be O(1).
 
+**LeetCode 1 - twoSum :**
+
+Same as the twoSum problem but we aren't using the inner loop from 0 rather than using from outer loop index+1. It will only work with the upper left triangle so no redundant value there.
+
 <hr/>
