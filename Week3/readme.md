@@ -119,4 +119,25 @@ Same as the twoSum problem but we aren't using the inner loop from 0 rather than
 
 Just creating three nested loop for upper left triangle (starting inner index from outer index+1), then checking three value matching the target or not. If matched then printing it.
 
+**shiftArray :**
+
+<i>Intuition :</i>
+
+We need cut the last elements according to the place mentioned and save it on something else. Then shift the other elements and than we need to place the cut element on the top indexes.
+
+<i>Approach: </i>
+
+1. Copy the shifted element in a temp array
+   1. If shift == arraySize than it will be same as previous after that it will start from 1. So shift % size is the finalShift. Ex: size = 6, shift = 7, 6 of the shift will make the same array so 7%6=1 is the finalShift.
+   2. Create a temp array and store shifted element there. temp index range : 0-finalShift, main array iteration : size - finalShift to size. As we need to move the shifted element.
+2. Shift array elements by finalShift places
+   1. Iterate array backward, from size-1.
+   2. Place finalShift's index before element in each index(i = i-finalShift) until in i-finalShift>=0
+3. Copy the elements into original array (arr = temp)
+
+<i>TC and SC</i>
+
+1. 3 Linear Loop so TC : O(size)+ O(size)+ O(finalShift) = O(size) -> size > finalShift
+2. Fixed array created so SC : O(1)
+
 <hr/>
