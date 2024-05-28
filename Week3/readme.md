@@ -115,4 +115,8 @@ We can also track how many combination printed by using a count variable and inc
 
 Same as the twoSum problem but we aren't using the inner loop from 0 rather than using from outer loop index+1. It will only work with the upper left triangle so no redundant value there.
 
+**LeetCode 15 - ThreeSum :**
+
+Just creating three nested loop for upper left triangle (starting inner index from outer index+1), then checking three value matching the target or not. If matched then printing it.
+
 <hr/>
