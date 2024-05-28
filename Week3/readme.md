@@ -100,4 +100,15 @@ We need to find the pair of numbers in an array whose sum is equal to the target
 
 Just like the pairPrint, we create two nested loop and on the inner loop we check the condition, arr[i] + arr[j] == target. We print the matched number.
 
+**Print All Triplets :**
+
+<i>Question :</i>
+
+We need to print all combination of any three element in one array
+
+<i>Approach :</i>
+
+Create three nested loop and print for each index in inner most loop.
+We can also track how many combination printed by using a count variable and increasing it on the each inner most loop iteration. The time complexity will be O(n^3) and space complexity will be O(1).
+
 <hr/>
