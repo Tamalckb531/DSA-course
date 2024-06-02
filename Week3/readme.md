@@ -164,4 +164,10 @@ We need cut the last elements according to the place mentioned and save it on so
 
 Init INT_MAX in minValue -> compare each value of array with minValue with min() function -> re-init the min() return in minValue and return it.
 
+**Transpose of Matrix:**
+
+1. newArray[i][j] = oldArray[j][i]
+
+2. If you can't use newArray than make the upper right triangle nested loop pattern and swap(arr[i][j], arr[j][i]) .
+
 <hr/>
