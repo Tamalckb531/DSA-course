@@ -145,10 +145,19 @@ We need cut the last elements according to the place mentioned and save it on so
 
 **Basic :**
 
-1. 2D array formula : NumOfCol\*index + colIndex
+1. 2D array formula : NumOfCol\*rowIndex + colIndex
 2. Row Wise Traversal : upper loop will be for row.
 3. Column Wise Traversal : upper loop will be for column.
 4. Diagonal Traversal : Print whenever rowIndex = colIndex .
 5. Diagonal Traversal : Here's a catch that the summation of both of the index in anti-diagonal element is always equal to the size-1. So we will check here rowIndex+colIndex == rowSize-1 or colSize -1. Then print it.
+
+**SearchIn2D :**
+
+1. Use the nested loop for linear search. Do mention the column number in the function as per the 2D array formula, we need to know the column number to traverse via nested loop.
+
+2. 2D vector creation process :
+   vector<vector<int>> vec_name (rows, vector<int>(cols, init value))
+
+3. Vector is pass by value. So we need to pass it with & sign in a function.
 
 <hr/>
