@@ -139,5 +139,16 @@ We need cut the last elements according to the place mentioned and save it on so
 
 1. 3 Linear Loop so TC : O(size)+ O(size)+ O(finalShift) = O(size) -> size > finalShift
 2. Fixed array created so SC : O(1)
+<hr/>
+
+## Array 3
+
+**Basic :**
+
+1. 2D array formula : NumOfCol\*index + colIndex
+2. Row Wise Traversal : upper loop will be for row.
+3. Column Wise Traversal : upper loop will be for column.
+4. Diagonal Traversal : Print whenever rowIndex = colIndex .
+5. Diagonal Traversal : Here's a catch that the summation of both of the index in anti-diagonal element is always equal to the size-1. So we will check here rowIndex+colIndex == rowSize-1 or colSize -1. Then print it.
 
 <hr/>
