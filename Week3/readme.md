@@ -160,4 +160,8 @@ We need cut the last elements according to the place mentioned and save it on so
 
 3. Vector is pass by value. So we need to pass it with & sign in a function.
 
+**MinIn2D:**
+
+Init INT_MAX in minValue -> compare each value of array with minValue with min() function -> re-init the min() return in minValue and return it.
+
 <hr/>
