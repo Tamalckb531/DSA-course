@@ -172,4 +172,35 @@ Init INT_MAX in minValue -> compare each value of array with minValue with min()
 
 # Week3 (Assignments) :
 
+**Key pair GFG (<a href="https://www.geeksforgeeks.org/problems/key-pair5616/1?ref=gcse">Problem</a>)**
+
+<i>Approach 1(two sum approach) :</i>
+
+1. Find out all the pair and sum of all.
+
+<i>Method 1 :</i>
+
+1. Nested Loop i=0 and j=i+1. Sum each element with other elements and check if the sum is equal to target or not. If yes than return true.
+
+```diff
+- TC: O(n^2) -> not useful for the question constrains
+```
+
+<i>Approach 2(two pointer approach) :</i>
+
+1. Make the array sorted in increasing order.
+2. Take two pointer index low and high.
+3. Each time sum of both is lower than target than low++. -> lower means need a high value -> low++ means adding high value in sum as it is arranged in increasing order.
+4. Vice-versa sum of both is higher than target than high--.
+5. Return true when sum is equal to target.
+
+<i>Method 1 :</i>
+
+1. To sort : sort(arr, arr+n);
+2. For low and high traversal make a while loop for low<high condition.
+
+```diff
++ TC: O(n) -> ok for the question constrains
+```
+
 <hr/>
