@@ -203,4 +203,43 @@ Init INT_MAX in minValue -> compare each value of array with minValue with min()
 + TC: O(n) -> ok for the question constrains
 ```
 
+**724. Find Pivot Index LeetCode (<a href="https://leetcode.com/problems/find-pivot-index/">Problem</a>)**
+
+<i>Question understand :</i>
+There is an array where we need to return the pivot index. The pivot index is the index which leftSum = rightSum.
+
+<i>Approach 1(Brute Force) :</i>
+
+1. Get the sum of both left and right side and check if they are same or not.
+2. Do not include the potential pivot element in the sum.
+
+<i>Method 1 :</i>
+
+1. Nested loop needed. internal Loop :
+   1. For left sum : j -> 0---i
+   2. For left sum : j -> i+1---n
+   3. Not including the ith element as it could be the pivot.
+2. If left sum = right sum then return the i which is the pivot.
+
+```diff
+- TC: O(n^2) -> not useful for the question constrains
+```
+
+<i>Approach 2(prefix sum approach) :</i>
+
+1. Watch the note for dry run.
+2. Take two array leftSum and rightSum and store all the index wise sum into them. Like 2nd index will store 0+1 index sum in leftSum and 3+4+5(assuming n=6) in the rightSum.
+3. Check if any index of both them has same value. If so then return.
+
+<i>Method 1 :</i>
+
+1. First loop for lsum will be 1---nums.size(). (as first sum will be 0).
+2. Second loop for rsum will be nums.size()-2---0. (as last sum will be 0).
+3. Third loop will be 0---nums.size(). Here we will check for the same index for both array and it will be the pivot.
+
+```diff
++ TC: O(n) -> ok for the question constrains
++ SC: O(n) -> ok for the question constrains
+```
+
 <hr/>
