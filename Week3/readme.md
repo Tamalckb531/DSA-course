@@ -242,4 +242,43 @@ There is an array where we need to return the pivot index. The pivot index is th
 + SC: O(n) -> ok for the question constrains
 ```
 
+**268. Missing Number (<a href="https://leetcode.com/problems/missing-number/">Problem</a>)**
+
+<i>Question understand :</i>
+Need to find out the missing number in a range. Like if the range is 3 then we need to see from 0,1,2,3 which number is missing in the given array.
+
+<i>Approach 1(Brute Force) :</i>
+
+1. Sorting the array will make the elem and index map clear. Like for 2 index the element will be two.
+2. So if we sort the array and traverse it, and while traversing if we see any index is not matching with the element, then that index will be the missing element. (as the array sorted so element should be in 0-X order just like the index)
+
+<i>Method 1 :</i>
+
+1. sort the array with sort(arr.begin(), arr.end()) method.
+2. Run a loop from 0 to n size and check if index!=arr[index]. Return index on condition match.
+3. Edge case : If all element is matched with the index than last size n will be the missing number. Like [0,1] arr.size = 2 so missing number is 2.
+4. return arr.size() after the end.
+
+```diff
+- TC: O(nlogn) -> for the sort method. Not useful.
++ SC: O(1) -> Ok.
+```
+
+<i>Approach 2(Bitwise approach) :</i>
+
+1. We know that A^A = 0, 0^A=A and A^A^B^B^C = 0.
+2. So we will XOR all array value and range value. Than we will get the Missing element.
+
+<i>Method 1 :</i>
+
+1. Get a ans variable with value 0. (as A^0 = A law).
+2. Run a loop to XOR all elements of array. 0---array.size() - 1.
+3. Run a loop to XOR all range value. 0---array.size().
+4. Return the ans.
+
+```diff
++ TC: O(n) -> ok for the question constrains
++ SC: O(1) -> ok for the question constrains
+```
+
 <hr/>
