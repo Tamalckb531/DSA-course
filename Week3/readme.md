@@ -281,4 +281,27 @@ Need to find out the missing number in a range. Like if the range is 3 then we n
 + SC: O(1) -> ok for the question constrains
 ```
 
+**26. Remove Duplicate from Sorted Array (<a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/">Problem</a>)**
+
+<i>Question understand :</i>
+There is a sorted array with duplicate elements and we need to return how many unique elements are there which will be k and re-arrange the array with all the unique element placed in the 0-k index position. Doesn't matter what element after the kth index in the array.
+
+<i>Approach (Two pointers approach) :</i>
+
+1. Keep a checker which will check each element of the array.
+2. Keep a unique which will set all the unique element of the array one after another.
+3. As unique is the index so k will be unique+1.
+
+<i>Method :</i>
+
+1. Start checker index from 1 and unique from 0. As the first element don't need to change it's place.
+2. Increase the checker whenever checker index element = unique index element. (which means this is duplicate so we need check the next one.)
+3. If not equal than increase the unique element (to place to unique side by side) -> set the element in checker in unique index -> increase the checker(as the element already checked and we need to check the next one.)
+4. The traverse should be in a while loop where the loop will continue until checker < array.size().
+
+```diff
++ TC: O(n) -> n is the array size.
++ SC: O(1) -> We create only two variable.
+```
+
 <hr/>
