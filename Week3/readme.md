@@ -1,4 +1,4 @@
-# Week 3 :
+# Week 3 (class) :
 
 ## Space and Time complexity :
 
@@ -169,5 +169,7 @@ Init INT_MAX in minValue -> compare each value of array with minValue with min()
 1. newArray[i][j] = oldArray[j][i]
 
 2. If you can't use newArray than make the upper right triangle nested loop pattern and swap(arr[i][j], arr[j][i]) .
+
+# Week3 (Assignments) :
 
 <hr/>
