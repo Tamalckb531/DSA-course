@@ -304,4 +304,49 @@ There is a sorted array with duplicate elements and we need to return how many u
 + SC: O(1) -> We create only two variable.
 ```
 
+**643. Maximum Average Subarray (<a href="https://leetcode.com/problems/maximum-average-subarray-i/">Problem</a>)**
+
+<i>Question understand :</i>
+There is a array given and we need to find the sub-array of this with k element which will have the maximum average(sum/k) .
+
+<i>Approach (sliding window approach) :</i>
+
+1. To maximize the average we need to maximize the sum.
+2. We will create a window starting from 0 index and ending in k-1 index. So that we can slide the window by increasing starting and ending point by one.
+3. Will sum up all the element in that window than compare them with other sum to see if it is the max.
+4. After finding the max we will find the avg in double and return it.
+
+<i>Method :</i>
+
+1. Sliding window starting point i=0 and j=k-1.
+2. A loop will run until j < array.size().
+3. will store all the value of one window in sum variable by a for loop running form i to j.
+4. Compare the sum by the max() function with maxSum which is init INT_MIN.
+5. return maxAvg = maxSum /(double) k; -> explicit typecasting for making the output double.
+
+```diff
+- TC: O(n^2) -> Not suitable.
++ SC: O(1) -> We create only two variable.
+```
+
+<i>Approach (sliding window approach without loop nesting) :</i>
+
+1.We can just set one loop to sum the initial i to k window
+2.Then make an outer loop where we just adding next elem after last index and removing the 1st element. 3. Then comparing it with the previous one and storing the bigger one in a maxSum variable. 4. Then doing the rest like the previous.
+
+<i>Method :</i>
+
+1. Make first for loop to do the initial sum. Make it the maxSum.
+2. Increase the j or last index of window as we need to work with next element.
+3. Make the next while loop until last index exceeding the size.
+   1. Remove the first element.
+   2. Add the next element.
+   3. Increase the first and last index.
+4. Get the maxAvg and return it.
+
+```diff
++ TC: O(n) -> Ok.
++ SC: O(1) -> Ok.
+```
+
 <hr/>
