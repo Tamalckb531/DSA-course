@@ -349,4 +349,51 @@ There is a array given and we need to find the sub-array of this with k element 
 + SC: O(1) -> Ok.
 ```
 
+**75. Sort Color (<a href="https://leetcode.com/problems/sort-colors/">Problem</a>)**
+
+<i>Question understand :</i>
+There is an array with 0,1,2 multiple times. Sort them in increasing order.
+
+<i>Approach (counting element approach) :</i>
+
+1. Count 0,1,2 appearance.
+2. Add those element by loop while maintaining the hierarchy 0-1-2.
+
+<i>Method :</i>
+
+1. Make three variable zero, one and two to count the appearance.
+2. Traverse the whole array with a for loop and check each element, increasing the counting var number according to the element.
+3. Make an outer index init 0 and three while loop where it will first include all the 0 then 1 then 2 also on each loop the index will rise and the counting will decrease to zero (which will be the condition of the loop)
+
+```diff
++ TC: O(n) -> Ok.
++ SC: O(1) -> ok.
+# But the code do not sort in place.
+```
+
+<i>Approach (three pointer approach) :</i>
+
+1. See the dry run in note.
+2. Make three pointer low, medium (both pointing in first index) and high (pointing in last index).
+3. Medium is the key factor. Value on it's index will change the direction.
+4. When medium index has 0 -> medium should send the value to low -> swap with low index value and increase both of the point to check next.
+5. When medium index has 1 -> It is on the right index -> increase the medium point to check the next.
+6. When medium index has 2 -> medium should send it to high -> swap with high index value and decrease the high index to check the next.
+7. All work should done in a while loop where medium <= high.
+
+<i>Method :</i>
+
+1. Make first for loop to do the initial sum. Make it the maxSum.
+2. Increase the j or last index of window as we need to work with next element.
+3. Make the next while loop until last index exceeding the size.
+   1. Remove the first element.
+   2. Add the next element.
+   3. Increase the first and last index.
+4. Get the maxAvg and return it.
+
+```diff
++ TC: O(n) -> Ok.
++ SC: O(1) -> Ok.
+```
+
 <hr/>
