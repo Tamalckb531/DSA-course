@@ -396,4 +396,21 @@ There is an array with 0,1,2 multiple times. Sort them in increasing order.
 + SC: O(1) -> Ok.
 ```
 
+**Move Negative Number in Left :**
+
+<i>Question understand :</i>
+There's an array with negative and positive number unsorted, we just need to set the negative numbers in the left. No sort needed.
+
+<i>Approach (Dutch National Flag Algo) :</i>
+
+1. Keep two pointers one on first index (left) and other on last index (right).
+2. left index should store the negative number so we will check if num[left]<0, if ok then check next -> left++.
+3. right index should store the positive number so we will check if num[left]>0, if ok then check next -> right--.
+4. If no condition matched that means left has positive number and right has negative number. So we will swap them
+
+```diff
++ TC: O(n) -> Ok.
++ SC: O(1) -> ok.
+```
+
 <hr/>
