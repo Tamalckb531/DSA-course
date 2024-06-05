@@ -413,4 +413,24 @@ There's an array with negative and positive number unsorted, we just need to set
 + SC: O(1) -> ok.
 ```
 
+**LeetCode 287. Find The Duplicate Number ((<a href="https://leetcode.com/problems/find-the-duplicate-number/">Problem</a>)) :**
+
+<i>Question understand :</i>
+An array given has one integer more than one time. We need to find that without modifying the array. The element here in the array is within the range of index.
+
+<i>Approach (three pointer approach) :</i>
+
+Sent the first element on it's equal index (like if the first element is 3 than sent it on 3rd index). If the first element already exist in it's equal index that that number is duplicate.
+
+<i>Method :</i>
+
+1. Make the while loop condition -> until firstElement is not equal to it's equal index.
+2. swap the the equal index and firstElement inside the loop so the other element is the firstElement now.
+3. Return the firstElement when the loop break as it has now the element that is duplicate existing in it's own index and first index both.
+
+```diff
++ TC: O(n) -> Ok.
++ SC: O(1) -> ok.
+```
+
 <hr/>
