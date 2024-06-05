@@ -418,7 +418,7 @@ There's an array with negative and positive number unsorted, we just need to set
 <i>Question understand :</i>
 An array given has one integer more than one time. We need to find that without modifying the array. The element here in the array is within the range of index.
 
-<i>Approach (three pointer approach) :</i>
+<i>Approach :</i>
 
 Sent the first element on it's equal index (like if the first element is 3 than sent it on 3rd index). If the first element already exist in it's equal index that that number is duplicate.
 
@@ -427,6 +427,31 @@ Sent the first element on it's equal index (like if the first element is 3 than 
 1. Make the while loop condition -> until firstElement is not equal to it's equal index.
 2. swap the the equal index and firstElement inside the loop so the other element is the firstElement now.
 3. Return the firstElement when the loop break as it has now the element that is duplicate existing in it's own index and first index both.
+
+```diff
++ TC: O(n) -> Ok.
++ SC: O(1) -> ok.
+```
+
+**Missing Element from and Array with Duplicates :**
+
+<i>Question understand :</i>
+An array given has one integer more than one time and some element's are missing. We need to find that missing element . The element here in the array is within the range of index.
+
+<i>Approach (visiting array approach) :</i>
+
+1. Lets call the index : arrayIndex and elements : elementIndex.
+2. Traverse the array normally and take each element by arrayIndex.
+3. Use the element as elementIndex and make the element on those elementIndex -ve.
+4. So the element that don't exist on array, the equivalent index element of those missing elements will be positive number.
+5. Print them to show.
+
+<i>Method :</i>
+
+1. Traverse Array with arrayIndex.
+2. Take each element as elementIndex or the whole array.
+3. See if that element is positive -> if so then make it negative.
+4. Now all elements that are missing their equivalent index element are positive so print them.
 
 ```diff
 + TC: O(n) -> Ok.
