@@ -511,4 +511,25 @@ Three sorted array are given where three have some common elements. We need to f
 + SC: O(n) -> ok.
 ```
 
+**LeetCode 54. Spiral Matrix ((<a href="https://leetcode.com/problems/spiral-matrix/">Problem</a>)) :**
+
+<i>Question understand :</i>
+Given 2D matrix should printed spirally.
+
+<i>Approach :</i>
+
+1. Set 4 index for startingCol, StartingRow, endingCol, endingRow.
+2. Print in this order startingRow -> endingCol -> endingRow -> startingCol.
+3. Each time printing one, shrink them by increasing or decreasing one.
+4. All this will happen in a loop which will run until count of print is less than row\*col (add this condition also in all 4 printing condition in for loop)
+
+<i>Method :</i>
+
+1. Watch the code. It is in good format already.
+
+```diff
++ TC: O(row*col) -> Ok.
++ SC: O(row*col) -> ok.
+```
+
 <hr/>
