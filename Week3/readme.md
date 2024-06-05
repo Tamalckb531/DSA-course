@@ -511,7 +511,7 @@ Three sorted array are given where three have some common elements. We need to f
 + SC: O(n) -> ok.
 ```
 
-**LeetCode 54. Spiral Matrix ((<a href="https://leetcode.com/problems/spiral-matrix/">Problem</a>)) :**
+**LeetCode 54. Spiral Matrix (<a href="https://leetcode.com/problems/spiral-matrix/">Problem</a>) :**
 
 <i>Question understand :</i>
 Given 2D matrix should printed spirally.
@@ -530,6 +530,26 @@ Given 2D matrix should printed spirally.
 ```diff
 + TC: O(row*col) -> Ok.
 + SC: O(row*col) -> ok.
+```
+
+**GFG. Factorials of large numbers (<a href="https://www.geeksforgeeks.org/problems/factorials-of-large-numbers2508/1">problem</a>):**
+
+<i>Question understand :</i>
+We need to store the big number factorial in an array cause int can't store really big number.
+
+<i>Approach & Method :</i>
+
+1. Traverse For each number from 2 to N. (push 1 at ans in beginning). Set a carry 0.
+2. Inside traverse the ans array:
+   1. multiply the number of factorial with number inside array. Add the carry with them.
+   2. modulus the 1 with 10 and store it in ans with co-current index.
+   3. Get the carry.
+3. We can get carry more than one digit so we need to break the carry into one digit and push it over and over.
+4. reverse the ans to get backward to forward number.
+
+```diff
++ TC: O(n^2) -> Ok.
++ SC: O(n) -> ok.
 ```
 
 <hr/>
