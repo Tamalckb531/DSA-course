@@ -458,4 +458,25 @@ An array given has one integer more than one time and some element's are missing
 + SC: O(1) -> ok.
 ```
 
+**GFG. First Repeating Element (<a href="https://www.geeksforgeeks.org/problems/first-repeating-element4018/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article">problem</a>):**
+
+<i>Question understand :</i>
+An array is given with multiple element repeating themselves. Now we need to return the index of leftMost repeated element.
+
+<i>Approach (hashing) :</i>
+
+1. Map all the element(key) with their count(value) by traversing the array.
+2. Traverse the map and see if any key/element has value/count more than one. return the index. (we traversing from the left 0-n so returned index will be the leftMost)
+
+<i>Method :</i>
+
+1. Make hashmap with unordered_map< int, int >.
+2. Use arr[i] as key in the first traversal.
+3. Second traversal check the count with hash[arr[i]].
+
+```diff
++ TC: O(n) -> Ok.
++ SC: O(n) -> ok.
+```
+
 <hr/>
