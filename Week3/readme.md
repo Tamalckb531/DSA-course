@@ -479,4 +479,36 @@ An array is given with multiple element repeating themselves. Now we need to ret
 + SC: O(n) -> ok.
 ```
 
+**GFG. Common elements (<a href="https://www.geeksforgeeks.org/problems/common-elements1132/1">problem</a>):**
+
+<i>Question understand :</i>
+Three sorted array are given where three have some common elements. We need to find out all of them and return them as a vector. Repeated common element should return as one element.
+
+<i>Approach (Three pointers) :</i>
+
+1. Get three pointer for three of the array and check if all the pointer pointing elements that are equal or not:
+
+   1. If equal than :
+
+      1. Store them in an set to avoid the repetition and later store those in vector.
+      2. increase all the pointers to check the next.
+
+   2. If not than :
+
+      1. Check first array value is shorter than the second array value. If so then increase first pointer. (as both sorted array so closer or greater value to second array will be the next value of first array)
+      2. Check for the second and third like same and do increase the second pointer if the condition match.
+      3. If none of them match that third has the smallest value so increase the third pointer.
+
+2. Do this entire thing in a while loop until one pointer crossing the range.
+
+<i>Method :</i>
+
+1. use set to store the common value
+2. After that use for(auto elem:set) to store all element of set in vector.
+
+```diff
++ TC: O(n1+n2+n3) -> Ok.
++ SC: O(n) -> ok.
+```
+
 <hr/>
