@@ -62,3 +62,12 @@ _2D Array:_
 8. .backs(): to get the last data.
 9. .empty(): return true if q is empty.
 10. toBeSwap.swap(valueProvider) : to swap a queue with other queue value.
+
+## Stack :
+
+1. Last in First out.
+2. .push() : to add an element.
+3. .pop() : to remove an element.
+4. .top() : to see an element from the top.
+5. .size() : to see the size of the stack.
+6. .empty() : return true if the stack is empty.
