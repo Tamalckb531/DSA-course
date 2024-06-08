@@ -49,3 +49,16 @@ _2D Array:_
 15. toBeSwap.swap(valueProvider) : to swap a list with other list value.
 16. .insert(position , value) : to add a value in a particular position
 17. erase(startPosition, endPosition) : to erase a range of data.
+
+## Queue :
+
+1. Fist in First Out system.
+2. Add in the rear and remove from the front.
+3. Creation : queue<int> q;
+4. .push(value): to add element.
+5. .pop(): to remove element.
+6. .size(): to check the size.
+7. .front(): to get the first data.
+8. .backs(): to get the last data.
+9. .empty(): return true if q is empty.
+10. toBeSwap.swap(valueProvider) : to swap a queue with other queue value.
