@@ -25,3 +25,27 @@
 _2D Array:_
 
 1.  Declaration: vector<vector<data_type>> arr(row, whatToPutInRow);
+
+## LinkedList :
+
+1. Store data in non-contiguous location.
+2. node -> has 3 blocks :
+   1. first block -> store the memory location of previous data.
+   2. middle block -> store data.
+   3. last block -> store the memory location of next data.
+3. creation : list<int> myList;
+4. .push_back() : to add data.
+5. .push_front() : to add data from 1st index.
+6. .pop_front() : to remove data from 1st index.
+7. .pop_back() : to remove data from last data.
+8. .size() : to check the size.
+9. .empty() : return 1 if the list is empty.
+10. .front() : to get the 1st data.
+11. .back() : to get the last data.
+12. .begin() : first node memory location.
+13. .end() : last node memory location.
+    **We can iterate the entire list with the help of iterator and begin(),end() (watch the code for that)**
+14. .remove(value) : will remove the value from the list. (no matter how times it is there in the list)
+15. toBeSwap.swap(valueProvider) : to swap a list with other list value.
+16. .insert(position , value) : to add a value in a particular position
+17. erase(startPosition, endPosition) : to erase a range of data.
