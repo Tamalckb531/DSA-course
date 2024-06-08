@@ -71,3 +71,16 @@ _2D Array:_
 4. .top() : to see an element from the top.
 5. .size() : to see the size of the stack.
 6. .empty() : return true if the stack is empty.
+
+## Deque :
+
+1. Creation : deque<int> dq;
+2. .push_back/front() : to add data from back/front.
+3. .pop_back/front() : to remove data from back/front.
+4. .front()/.back() : to get data from front/back.
+5. .begin()/ .end() : to get the memory location of begin or end.
+6. Iterator : watch the code for this. Use to iterate all the value of a deque.
+7. .at(index) : to get the value in an index.
+8. clear() : to remove all the element.
+9. insert(position, value) : to insert a value in a specific location.
+10. .erase(startIndex, endIndex) : to erase range of value.
