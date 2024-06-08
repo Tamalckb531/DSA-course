@@ -84,3 +84,18 @@ _2D Array:_
 8. clear() : to remove all the element.
 9. insert(position, value) : to insert a value in a specific location.
 10. .erase(startIndex, endIndex) : to erase range of value.
+
+## priority_queue (Max heap) :
+
+1. Store the element according to it's priority. Like highest value.
+2. Creation : priority_queue<int> pq;
+3. .push() : to add the value;
+4. .push() : to add the value;
+5. .pop() : to remove the highest priority value.
+6. .size() : to get the size.
+7. .empty() : return 1 if pq is empty.
+
+**MIN HEAP :**
+
+1. It gives highest priority to the min value.
+2. Creation : priority_queue<int, vector<int>, greater<int>> pq;
