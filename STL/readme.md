@@ -116,3 +116,16 @@ _2D Array:_
 11. .erase(startPosition, endPosition) : to erase value of a range.
 12. .find(key) : return the iterator/position of the key.
 13. .count(key) : Return 1 if key found and 0 if key not found.
+
+## set :
+
+1. Store only unique data.
+2. Set has two type : ordered and unordered.
+3. .insert() : to insert a value.
+4. can iterate values with Iterator, give value in sorted way.
+5. .clear() : to remove all element.
+6. .size() : to get the size.
+7. .empty() : return 1 if the set is empty.
+8. .erase(startPosition, endPosition) : to remove a range of value.
+9. .find(value) : return the starting location of the value. If the value is not available then it gives the ending location of the set.
+10. .count(value) : Return 1 if value found and 0 if value not found.
