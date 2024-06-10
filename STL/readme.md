@@ -151,3 +151,14 @@ _2D Array:_
     element array while not modifying the main array. It provides an iterator by which we can access the unique elements.
 9.  partition(arr.begin(), arr.end(), func) : it will
     divide array in two parts according to the func condition.
+
+## Numerics :
+
+1. accumulate(arr.begin(), arr.end(), initValue) : to sum
+   all element of arr.
+2. inner_product(arr1.begin(), arr1.end(), arr2.begin(), 0):
+   to get the inner product of two array.
+3. partial_sum(arr.begin(), arr.end(), result.begin()) :
+   return an array where the elements of it will be arr[i] + sumOfPrev.
+4. iota(first.begin(), first.end(), initValue) : Will fill
+   the value incrementally for first array.
