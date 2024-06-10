@@ -162,3 +162,12 @@ _2D Array:_
    return an array where the elements of it will be arr[i] + sumOfPrev.
 4. iota(first.begin(), first.end(), initValue) : Will fill
    the value incrementally for first array.
+
+## Searching and finding :
+
+1. binary_search(arr.begin(), arr.end(), target) : return
+   1 if value found.
+2. lower_bound(arr.begin(), arr.end(), target) : return the
+   target if target exist of return the greater value of it in the array.
+3. upper_bound(arr.begin(), arr.end(), target): return the
+   greater value of it in the array even if the target exist.
