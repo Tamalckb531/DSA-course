@@ -179,7 +179,7 @@ _2D Array:_
 2. max/min_element(arr.begin(), arr.end()) : to find the
    min/max element of an array.
 
-# Heap :
+## Heap :
 
 1. make_heap(arr.begin(), arr.end()) : make an vector
    heap.
@@ -190,7 +190,7 @@ _2D Array:_
 4. sort_heap(arr.begin(), arr.end()) : to make the heap
    sorted.
 
-# set:
+## set:
 
 1. set_union(arr1.begin(), arr1.end(), arr2.begin(), arr2.end(), inserter(result, result.begin())) : to get the union of set.
 2. set_intersection(arr1.begin(), arr1.end(), arr2.begin(), arr2.end(), inserter(result, result.begin())) : to get the intersection of set.
