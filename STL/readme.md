@@ -129,3 +129,25 @@ _2D Array:_
 8. .erase(startPosition, endPosition) : to remove a range of value.
 9. .find(value) : return the starting location of the value. If the value is not available then it gives the ending location of the set.
 10. .count(value) : Return 1 if value found and 0 if value not found.
+
+# Containers
+
+## Iterators :
+
+1.  for_each(arr.begin(), arr.end(), func) : use to apply a
+    function into a range of array element.
+2.  find(arr.begin(), arr.end(), target) : return the
+    iterator of the target it found.
+3.  find_if(arr.begin(), arr.end(), function) : return
+    value iterator according to the function.
+4.  count(arr.begin(), arr.end(), target) : return the
+    occurrence of the target in the array.
+5.  sort(arr.begin(), arr.end()) : to sort array in
+    ascending order.
+6.  reverse(arr.begin(), arr.end()) : to reverse ab array.
+7.  rotate(arr.begin(), arr.begin() + n, arr.end());
+    : to rotate a range of array.
+8.  unique(arr.begin(), arr.end()): will set an unique
+    element array while not modifying the main array. It provides an iterator by which we can access the unique elements.
+9.  partition(arr.begin(), arr.end(), func) : it will
+    divide array in two parts according to the func condition.
