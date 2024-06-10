@@ -171,3 +171,10 @@ _2D Array:_
    target if target exist of return the greater value of it in the array.
 3. upper_bound(arr.begin(), arr.end(), target): return the
    greater value of it in the array even if the target exist.
+
+## Min and Max :
+
+1. min(a,b)/max(a,b) : to find the min/max between two
+   element.
+2. max/min_element(arr.begin(), arr.end()) : to find the
+   min/max element of an array.
