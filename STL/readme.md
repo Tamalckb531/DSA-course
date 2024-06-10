@@ -189,3 +189,10 @@ _2D Array:_
    vector we need to run this.
 4. sort_heap(arr.begin(), arr.end()) : to make the heap
    sorted.
+
+# set:
+
+1. set_union(arr1.begin(), arr1.end(), arr2.begin(), arr2.end(), inserter(result, result.begin())) : to get the union of set.
+2. set_intersection(arr1.begin(), arr1.end(), arr2.begin(), arr2.end(), inserter(result, result.begin())) : to get the intersection of set.
+3. set_difference(arr1.begin(), arr1.end(), arr2.begin(), arr2.end(), inserter(result, result.begin())) : to get arr1-arr2.
+4. set_symmetric_difference(arr1.begin(), arr1.end(), arr2.begin(), arr2.end(), inserter(result, result.begin())) : to get arr1-arr2 (union) arr2-arr1.
