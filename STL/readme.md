@@ -178,3 +178,14 @@ _2D Array:_
    element.
 2. max/min_element(arr.begin(), arr.end()) : to find the
    min/max element of an array.
+
+# Heap :
+
+1. make_heap(arr.begin(), arr.end()) : make an vector
+   heap.
+2. push_heap(arr.begin(), arr.end()) : after push_back() in
+   vector we need to run this.
+3. pop_heap(arr.begin(), arr.end()) : before pop_back() in
+   vector we need to run this.
+4. sort_heap(arr.begin(), arr.end()) : to make the heap
+   sorted.
