@@ -99,3 +99,20 @@ _2D Array:_
 
 1. It gives highest priority to the min value.
 2. Creation : priority_queue<int, vector<int>, greater<int>> pq;
+
+## map :
+
+1. Store data in key-value pair.
+2. Key should be unique.
+3. Here we discussed about unordered_map and ordered_map(store data in a sorted order).
+4. Declaration : unordered_map<key_D_T, Value_D_T> table;
+5. Insertion : table[key] = value;
+   table.insert(make_pair(key, value));
+6. .size() : to check size.
+7. .clear() : to clear whole map.
+8. .empty() : return 1 if map is empty.
+9. .at(key) : to get a value at specific key.
+10. Can create Iterator with it. Watch the code for details.
+11. .erase(startPosition, endPosition) : to erase value of a range.
+12. .find(key) : return the iterator/position of the key.
+13. .count(key) : Return 1 if key found and 0 if key not found.
