@@ -17,3 +17,29 @@
 8. After every cutting part, we calculate the new mid.
    <br/>
    _TC :_ O(logn)
+9. There is a STL algorithm call binary_search(startPos, endPos, target) to do the binary search operation without writing code from scratch.
+
+**First Occurrence:**
+
+<i>Question :</i>
+
+We need to give the first index of a repetitive element in an sorted array using binary search.
+
+<i>Intuition :</i>
+
+1. we can find the element using binary search.
+   2.Instead of returning the index, we will store the index in a by reference Integer variable.
+2. But it may not be the first occurrence, so we will search in the left.
+3. Rest will be same process until start is greater than end.
+4. After all of that, the first occurrence will be stored inside the by reference variable.
+
+<i>Approach: (store and compute) </i>
+
+1. Store the mid in the by reference variable and make the end before mid after finding the target.
+2. On target >/< arr[mid] do the binary search approach.
+3. Do not forget to upgrade the mid.
+
+<i>TC and SC</i>
+
+1. Linear Loop so TC : O(n)
+2. Only one variable created so SC : O(1)
