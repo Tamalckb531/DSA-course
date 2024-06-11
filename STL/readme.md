@@ -130,7 +130,7 @@ _2D Array:_
 9. .find(value) : return the starting location of the value. If the value is not available then it gives the ending location of the set.
 10. .count(value) : Return 1 if value found and 0 if value not found.
 
-# Containers
+# Algorithms :
 
 ## Iterators :
 
