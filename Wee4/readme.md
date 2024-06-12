@@ -47,3 +47,7 @@ We need to give the first index of a repetitive element in an sorted array using
 **Last Occurrence:**
 
 Same as First, just search in the right or make the start after mid.
+
+**LeetCode 34. Find First and Last Position of Element in Sorted Array. [problem]:(https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)**
+
+Just like previous both, call two function and get the first and last position. Then push them in a vector and return them.
