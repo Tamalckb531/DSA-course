@@ -43,3 +43,7 @@ We need to give the first index of a repetitive element in an sorted array using
 
 1. Linear Loop so TC : O(n)
 2. Only one variable created so SC : O(1)
+
+**Last Occurrence:**
+
+Same as First, just search in the right or make the start after mid.
