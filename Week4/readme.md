@@ -51,3 +51,35 @@ Same as First, just search in the right or make the start after mid.
 **LeetCode 34. Find First and Last Position of Element in Sorted Array. [problem]:(https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)**
 
 Just like previous both, call two function and get the first and last position. Then push them in a vector and return them.
+
+## Mega Array:
+
+**unordered_map :**
+Just watch the code for basic syntax
+
+**2's Compliment :**
+
+<i>Question :</i>
+
+We will be given an array of 0 & 1 which represents a binary number and need to find out the 2's compliment of that binary number.
+
+<i>Intuition :</i>
+
+1. First flip the bit in array. (1's compliment)
+2. Add one in the last index and adjust the other element with carry.
+   (2's compliment)
+
+<i>Approach: (store and compute) </i>
+
+1. We will take an array with extra space to show the twos complement. One extra space to show the carry at top if we left one. Also gonna traverse both input and output array from the last index to get proper mapping.
+2. First we will traverse a loop in both input and output array(twos complement) and store the flip bit in output array. We will use ternary operator to check the bit and store flip bit.
+3. We will take a carry initially 1 then traverse the output array again. But this time :
+   1. we get the sum of carry and last index element.
+   2. %2 will be the bit to store.
+   3. /2 will be the new carry.
+4. If carry left than we will store it in the first index. (the reason to make the output array InputSize+1)
+
+<i>TC and SC</i>
+
+1. Linear Loop so TC : O(n)
+2. Output array created so SC : O(n+1)
