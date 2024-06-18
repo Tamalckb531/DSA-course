@@ -104,3 +104,28 @@ Given 2D array should be rotate clockwise.
 
 1. row and col traversal so TC : O(n\*m)
 2. SC : O(1)
+
+**LeetCode 53. Maximum Subarray. [problem]:(https://leetcode.com/problems/maximum-subarray/)**
+
+<i>Question :</i>
+
+Find out the sub-array(A sub-array is a contiguous non-empty sequence of elements within an array) that have maximum sum.
+
+<i>Intuition (Kadane's Algo) :</i>
+
+1. Sub array is contiguous and the array mixed with -ve and +ve value.
+2. We can add one by one value in a sum variable but drop the sum to one whenever the sum terms to 0. The reason is if we add something with a -ve than sum < something. So better to thing add the something with 0.
+3. Now we will have a max variable which will store the maximum sum.
+4. After the entire loop traverse the max will end up having the maximum sub-array sum. (as it is the largest contiguous non-drop sum)
+
+<i>Approach (Kadane's Algo):</i>
+
+1. Traverse the whole array.
+2. Add element into sum.
+3. compare ans with sum using max().
+4. set sum to 0 if sum<0.
+
+<i>TC and SC</i>
+
+1. TC : O(n)
+2. SC : O(1)
