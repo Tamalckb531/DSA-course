@@ -83,3 +83,24 @@ We will be given an array of 0 & 1 which represents a binary number and need to 
 
 1. Linear Loop so TC : O(n)
 2. Output array created so SC : O(n+1)
+
+**LeetCode 48. Rotate Image. [problem]:(https://leetcode.com/problems/rotate-image/)**
+
+<i>Question :</i>
+
+Given 2D array should be rotate clockwise.
+
+<i>Intuition :</i>
+
+1. Transpose the matrix first.
+2. Reverse the matrix row-wise.
+
+<i>Approach:</i>
+
+1. See the transpose code on note.
+2. Reverse with .reverse method.
+
+<i>TC and SC</i>
+
+1. row and col traversal so TC : O(n\*m)
+2. SC : O(1)
