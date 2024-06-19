@@ -155,3 +155,47 @@ Given array has a peak value then it goes to decreasing order. Ex : [0,10,5,2]. 
 
 1. TC : O(logn)
 2. SC : O(1)
+
+**LeetCode 33. Search in Rotated Sorted Array [problem]:(https://leetcode.com/problems/search-in-rotated-sorted-array/)**
+
+<i>Question :</i>
+
+Have to search an element in sorted rotated array with logn TC.
+
+sorted rotated : [9,10,11,0,1,2,3,4,5,6,7,8]
+
+<i>Intuition :</i>
+
+1. First step is to find out the pivot where the array rotated:
+   1. Here before and after pivot, both line are in increasing order. So we can't use the mountain array method. We need to identify which line is in left and which in right.
+   2. We will do binary search where mid could have three condition : mid is the pivot, mid is on right, mid is on left.
+   3. Mid will be pivot if mid is larger than it's next element.
+   4. Mid is on right can be determine if the element in starting index is larger than mid. Can all element on left including pivot is larger than each element in right. Also start index in binarySearch won't cross the pivot and go in right. We need to take left elements of mid in count.
+   5. If nothing matched then the mid is in left. We need to take right elements of mid in count.
+2. Next step is to find out the target :
+   1. target could be within the range of 0 and pivotIndex.
+   2. or it would be in range of pivotIndex+1 and size-1.
+   3. Both are increasingly sorted array so we can use binary search on that.
+
+<i>Approach :</i>
+
+1. Getting pivot index :
+
+   1. First handle the edge case of only one element : start == end -> return start.
+   2. If mid is pivot:
+      1. handle the edge case of mid + 1 < n.
+      2. return mid,
+   3. If mid in right -> end = mid - 1,
+   4. If mid in left -> start = mid + 1,
+   5. Update the mid.
+
+2. Getting the target Index :
+   1. If 0th index <= target <= pivot index -> binary search and get the targetIndex.
+   2. If pivot index + 1 <= target <= size - 1 index
+      1. handle edge case of pivotIndex + 1 < size.
+      2. binary search and get the targetIndex.
+
+<i>TC and SC</i>
+
+1. TC : O(logn)
+2. SC : O(1)
