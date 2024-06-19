@@ -9,6 +9,7 @@ void findMissing(int *arr, int n)
     for (int arrayIndex = 0; arrayIndex < n; arrayIndex++)
     {
         int elementIndex = abs(arr[arrayIndex]);
+
         if (arr[elementIndex - 1] > 0)
         {
             arr[elementIndex - 1] *= -1;
@@ -16,7 +17,6 @@ void findMissing(int *arr, int n)
     }
 
     // Now all positive numbers are non-visited, which means their index are missing elements.
-
     for (int i = 0; i < n; i++)
     {
         if (arr[i] > 0)
@@ -24,6 +24,7 @@ void findMissing(int *arr, int n)
             cout << i + 1 << " ";
         }
     }
+
     cout << endl;
 }
 
