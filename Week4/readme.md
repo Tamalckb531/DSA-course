@@ -129,3 +129,29 @@ Find out the sub-array(A sub-array is a contiguous non-empty sequence of element
 
 1. TC : O(n)
 2. SC : O(1)
+
+## Searching Sorting 2:
+
+**LeetCode 852. Peak Index in a Mountain Array [problem]:(https://leetcode.com/problems/peak-index-in-a-mountain-array/)**
+
+<i>Question :</i>
+
+Given array has a peak value then it goes to decreasing order. Ex : [0,10,5,2]. This are called mountain array. We need to return the index of the peak value.
+
+<i>Intuition :</i>
+
+1. We will think 2 line here. Will include peak in the second line.
+2. Will shrink both of the line by searching peak position from mid.
+3. Gonna store every mid of Line B as the mid will once end up in peak index.
+
+<i>Approach (Binary_search, store and compute):</i>
+
+1. Line A will be the line before peak and Line B will be the line after peak including peak.
+2. On Line A element < nextELement and on line B element > nextELement.
+3. While on Line A the peak can be in the right, and left on line B. So we will modify the index and search peak according to that.
+4. Peak is in the line B, so we will store the mid index while it will be on the line B until the loop breaks. That's how, after the loop breaks, we will have the peak index.
+
+<i>TC and SC</i>
+
+1. TC : O(logn)
+2. SC : O(1)
