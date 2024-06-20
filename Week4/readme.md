@@ -199,3 +199,25 @@ sorted rotated : [9,10,11,0,1,2,3,4,5,6,7,8]
 
 1. TC : O(logn)
 2. SC : O(1)
+
+**LeetCode 69. Sqrt(x) [problem]:(https://leetcode.com/problems/sqrtx)**
+
+<i>Question :</i>
+
+Need to find out the square root of the given number x.
+
+<i>Intuition (search space pattern):</i>
+
+1. Gonna binary search on 0 to x space.
+2. Will get each element and check their square is equal to the x.
+3. If less than x than we will store and compute so that if any square root comes in float than we can store it's lower bound decimal and return it.
+
+<i>Approach :</i>
+
+1. Simple binary search pattern where mid and ans(for store and compute) should be long long.
+2. On mid\*mid < x -> do store and compute (store mid in ans)
+
+<i>TC and SC</i>
+
+1. TC : O(logn)
+2. SC : O(1)
