@@ -221,3 +221,22 @@ Need to find out the square root of the given number x.
 
 1. TC : O(logn)
 2. SC : O(1)
+
+**LeetCode 74. Search a 2D Matrix [problem]:(https://leetcode.com/problems/search-a-2d-matrix/)**
+
+<i>Question :</i>
+
+Need to search a target in a 2D array.
+
+<i>Approach :</i>
+
+1. Get the row and column of matrix.
+2. Start binary search.
+3. To find mid element :
+   1. rowIndex = mid/col.
+   2. colIndex = mid%col.
+
+<i>TC and SC</i>
+
+1. TC : O(logn)
+2. SC : O(1)
