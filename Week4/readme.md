@@ -240,3 +240,27 @@ Need to search a target in a 2D array.
 
 1. TC : O(logn)
 2. SC : O(1)
+
+## Searching Sorting 3:
+
+**Find Quotient without division**
+
+<i>Intuition (search space pattern):</i>
+
+1. As we can't use the division, then we will use this mathematical formula :
+   _divisor \* quotient + reminder = dividend_
+2. We could have two type of answer here:
+   1. On this formula, reminder could be 0 -> _divisor \* quotient = dividend_. In this case the quotient is the definite ans.
+   2. reminder could be +ve -> _divisor \* quotient < dividend_. In that case we will consider the nearest quotient the ans.
+3. We will use binary search space technique to choose the quotient. This search space will be 0 to dividend (considering the both divisor and dividend are +ve). The mid is always the quotient.
+
+<i>Approach :</i>
+
+1. Just do as usual binary search. Start = 0 to end = dividend.
+2. Use mid = (s + (e-s)>>1). Here >> 1 means /2.
+3. Check both the condition mentioned in Intuition 2. Return mid in first and store and compute in the second (so that we can find more closer value)
+
+<i>TC and SC</i>
+
+1. TC : O(log(dividend))
+2. SC : O(1)
