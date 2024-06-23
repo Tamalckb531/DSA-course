@@ -264,3 +264,21 @@ Need to search a target in a 2D array.
 
 1. TC : O(log(dividend))
 2. SC : O(1)
+
+**Searching in nearly sorted array**
+
+<i>Question :</i>
+
+There given an array that is nearly sorted. Which means an element supposed to be in ith index, can be in i+1th or i-1th index. We need to search target with log(n) time complexity.
+
+<i>Intuition and approach:</i>
+
+1. Every time we find the target with mid with binary search, we can also search mid+1 and mid-1 also as the target element maybe in those index and return the index.
+2. As we are searching left and right element of mid so we don't need to set the next search for exact left or exact right. We will do :
+   1. start = mid+2 for right, as we already searched in mid+1.
+   2. end = mid-2 for left, as we already searched in mid-1.
+
+<i>TC and SC</i>
+
+1. TC : O(log(n))
+2. SC : O(1)
