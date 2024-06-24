@@ -282,3 +282,31 @@ There given an array that is nearly sorted. Which means an element supposed to b
 
 1. TC : O(log(n))
 2. SC : O(1)
+
+**LeetCode 540. Single Element in a Sorted Array [problem]:(https://leetcode.com/problems/single-element-in-a-sorted-array/)**
+
+<i>Question :</i>
+
+Each element of given array has occurrence 2 times in a single stretch except one. We need to find that one.
+
+<i>Intuition :</i>
+
+1. Before single element, occurrence start from odd index.
+2. After single element, occurrence start from even index.
+3. We need to find out the first element of the occurrence and than we can use binary search after finding it's position in left or right by startingPoint odd or even.
+4. If an element has no matched value in left or right, that wil be the single element.
+
+<i>Approach (Binary_search, store and compute):</i>
+
+1. First handle the single element condition.
+2. For first element, there is no mid-1 and for last, there is no mid+1. So we need to validate the index.
+3. Handle the condition of single value where it has no left or right value. Return the mid.
+4. Now check the condition if currentValue has matched value in left or right :
+   1. For left -> starting point is mid-1 -> if it's odd then currentValue is in right side -> if even than left side.
+   1. For right -> starting point is mid -> if it's odd then currentValue is in right side -> if even than left side.
+5. Apply binary search -> update mid.
+
+<i>TC and SC</i>
+
+1. TC : O(logn)
+2. SC : O(1)
