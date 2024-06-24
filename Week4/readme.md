@@ -310,3 +310,27 @@ Each element of given array has occurrence 2 times in a single stretch except on
 
 1. TC : O(logn)
 2. SC : O(1)
+
+## Mega Class: Searching and Sorting:
+
+**Square root with precision**
+
+<i>Intuition :</i>
+
+1. We already know how to find integer square root. So first we will find that.
+2. We need to square the ans for each precision with increasing step (0.1-0.9 and so on) until in over the number to root. Will use store and compute on that.
+3. After the root square exceeding input number, we will increase the step (0.1 - 0.01). Also decrease the precision.
+4. In the end we will get the ans.
+
+<i>Approach (Binary_search, store and compute):</i>
+
+1. Get the integer sqrt, set precision, set step with 0.1.
+2. Start a while loop until precision and init the integer sqrt in a double value.
+3. Again start a while loop until { (double value)^2 <=n } .
+4. Every time store and compute -> store the double value in sqrt and add step into that double value.
+5. Every time loop exceed, divide step / 10 to make it more precision and decrease the precision count.
+
+<i>TC and SC</i>
+
+1. TC : O(logn + precision) -> log(n) for integer sqrt and precision for with precision sqrt.
+2. SC : O(1)
