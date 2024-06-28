@@ -354,3 +354,25 @@ Read the question from LeetCode with details.
 
 1. TC : O(pileSize\*log(maxPile))
 2. SC : O(1)
+
+**1482. Minimum Number of Days to Make m Bouquets [problem](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/)**
+
+<i>Question :</i>
+
+Read the question from LeetCode with details.
+
+<i>Intuition and approach (search space , store and computing) :</i>
+
+1. First check check totalFlower given in array is sufficient to required bouquets.
+2. Minimum day in the array should be starting point for search space as less day can't produce a single flower. Max will be the end.
+3. We need to make sure if we can make a bouquet after getting the day as mid.
+   1. If any element bloomDay is less than day than it is bloomed and can be used in bouquet. Should account it.
+   2. If we count enough flower to make a bouquet than we wil make on bouquet less and count from start.
+   3. As per question, we need adjacent flower so, if any flower bloomDay is greater than our day then we will count from start for the next flower.
+   4. When we get all bouquet done, we will stop the counting (loop).
+4. Bouquet == 0 means it can be a possible ans so we will store it and compute for lesser search space as we need the minimum.
+
+<i>TC and SC</i>
+
+1. TC : O(bloomDaySize\*log(maxDay))
+2. SC : O(1)
