@@ -334,3 +334,23 @@ Each element of given array has occurrence 2 times in a single stretch except on
 
 1. TC : O(logn + precision) -> log(n) for integer sqrt and precision for with precision sqrt.
 2. SC : O(1)
+
+**LeetCode 875. Koko Eating Bananas [problem](https://leetcode.com/problems/koko-eating-bananas/description/)**
+
+<i>Question :</i>
+
+Read the question from LeetCode with details.
+
+<i>Intuition and approach (search space , store and computing) :</i>
+
+1. Get the max element first, so that we can create the search space as search space can't go beyond max element.
+2. We get the mid element as speed and validated the speed.
+   1. For validate we calculate all the hours need to clear the each stack of banana in piles. (hour = element/speed)
+   2. Check the total hour is less than or equal to hour given. Return true for that or else false.
+3. If speed validate than store it in ans and update the end to search for lesser element as we need to get the minimum speed.
+4. Or else to update the start to get the .
+
+<i>TC and SC</i>
+
+1. TC : O(pileSize\*log(maxPile))
+2. SC : O(1)
