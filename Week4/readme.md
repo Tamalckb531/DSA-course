@@ -407,3 +407,22 @@ Read the question from LeetCode with details.
 
 1. TC : O(n^2)
 2. SC : O(1)
+
+**Insertion Sort:**
+
+<i>Intuition and approach :</i>
+
+1. Selection sort has two main loop
+2. Outer loop select the right element for compare the with the left sorted once.
+   So it starts from 1 as we need a space in left to compare.
+3. Inner loop start from i-1 and goes to 0.
+   1. It first select the ith element as key and then compare then with it's immediate left element > key.
+   2. If so then it shift the immediate one in the right and select the next immediate one to compare.
+   3. Now it goes until inner loop goes beyond 0 or next immediate is not less then the key.
+   4. Then it place the key in the previous immediate place. (j+1).
+   5. **The intuition behind the prev 3 and 4 logic is, if the next immediate is not greater than key then the other left most won't be, as they are already sorted in previous step**
+
+<i>TC and SC</i>
+
+4. TC : O(n^2)
+5. SC : O(1)
