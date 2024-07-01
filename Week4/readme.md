@@ -426,3 +426,7 @@ Read the question from LeetCode with details.
 
 4. TC : O(n^2)
 5. SC : O(1)
+
+**Custom Comparator:**
+
+Watch the code where we learn about sorting 1D and 2D matrix both increasing and decreasing order.
