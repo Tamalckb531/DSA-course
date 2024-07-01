@@ -392,3 +392,18 @@ Read the question from LeetCode with details.
 
 1. TC : O(n^2)
 2. SC : O(1)
+
+**Selection Sort:**
+
+<i>Intuition and approach :</i>
+
+1. Selection sort has two main loop
+2. Outer loop target from the left and make the index the minIndex
+3. Inner loop compare all the right most elements with the element in minIndex and swap the smaller one with it's place. That's how it place the smallest element in right in the minIndex.
+4. The outer loop run 1 less time then the endIndex. For example: if there is 5 element and we place the smallest 4 from left to right then the 5th one will automatically place itself.
+5. The inner loop run from the (target index by outer loop + 1)th index to endIndex. As it needs to compare the right most element of that index with it to find the smallest one.
+
+<i>TC and SC</i>
+
+1. TC : O(n^2)
+2. SC : O(1)
