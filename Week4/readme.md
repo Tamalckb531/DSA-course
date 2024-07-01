@@ -376,3 +376,19 @@ Read the question from LeetCode with details.
 
 1. TC : O(bloomDaySize\*log(maxDay))
 2. SC : O(1)
+
+## Sorting Algo:
+
+**Bubble Sort:**
+
+<i>Intuition and approach :</i>
+
+1. Bubble sort has two main loop
+2. Outer loop represents the displacement of a single element towards it's most right. Which means the much the value is the much it will go towards right. So, this loop runs to (0 -> endIndex-1). endIndex-1 cause it is already in it's own index. So -1 is subtracting it's own index traversal.
+3. Inner loop is the swap adjacent elements if left is larger than the right one. Every time the first loop run , largest element goes to the top right. So, every time we needs to travel one less than the previous one in the inner loop. That's why it runs to (0 -> endIndex - 1 - outerLoopVal).
+4. Every time inside the inner loop we getting an element larger than the right one, we swap it.
+
+<i>TC and SC</i>
+
+1. TC : O(n^2)
+2. SC : O(1)
