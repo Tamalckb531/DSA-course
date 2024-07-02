@@ -430,3 +430,73 @@ Read the question from LeetCode with details.
 **Custom Comparator:**
 
 Watch the code where we learn about sorting 1D and 2D matrix both increasing and decreasing order.
+
+# Week 4 (Assignments):
+
+**532. K-diff Pairs in an Array [problem](https://leetcode.com/problems/k-diff-pairs-in-an-array/)**
+
+<i>Question :</i>
+Given an array of integers nums and an integer k, return the number of unique k-diff pairs in the array.
+
+A k-diff pair is an integer pair (nums[i], nums[j]), where the following are true:
+
+0 <= i, j < nums.length
+i != j
+|nums[i] - nums[j]| == k
+
+<i>Intuition :</i>
+
+Basically we will target a single element in this array and find the difference of all other elements in the array. If the difference is equal than we will store it uniquely.
+
+<i>Approach 1 (two pointers approach) :</i>
+
+1. First we need to sort the array to make the task easy.
+2. We will get the difference of first and second pointer (init i=0, j=1) and every time it is equal to k, we will store it (Remember to use set to store the unique pair.)
+3. If diff > k, that means we need larger first pointer so i++;
+4. If diff < k, that means we need larger second pointer so j--;
+5. What if k = 0 ? Then all after at a time, both pointers will get in one place and store the single number in a pair. But constrain says i!=j. So we will j++ in i==j.
+
+<i>Approach 2 (Binary Search approach) :</i>
+
+1. Sort the array.
+2. We know the difference is k = a[j] - a[i] or a[j] = k + a[i] .
+3. Do binary search in the right side to find the a[j] = k + a[i] .
+4. If found than store the value.
+5. return the size.
+
+<i>TC and SC</i>
+
+1. TC : O(nlogn)
+2. SC : O(1)
+
+**658. Find K Closest Elements [problem](https://leetcode.com/problems/find-k-closest-elements/)**
+
+<i>Question :</i>
+Given a sorted integer array arr, two integers k and x, return the k closest integers to x in the array. The result should also be sorted in ascending order.
+
+An integer a is closer to x than an integer b if:
+
+|a - x| < |b - x|, or
+|a - x| == |b - x| and a < b
+
+Input: arr = [1,2,3,4,5], k = 4, x = 3
+Output: [1,2,3,4]
+
+<i>Intuition :</i>
+
+1. We need to first find out the all the difference between elements of the array and x. Remember, there will be a point where difference is 0, so the difference in left and right point should be find out accordingly.
+2. Then we need find out the closest k difference element with respect to the element with 0 diff.
+3. Then we need to return all.
+
+<i>Approach (two pointers approach) :</i>
+
+1. We will point two pointers, one in the start(low) and one in end(high).
+2. Will check if the left difference is larger than right difference.
+   1. If so, that means we need closer left. So low++ .
+   2. If not, that means we need closer high. So high-- .
+3. We found the low and high bound. So now we can return the sub-array like this : vector<int>(arr.begin() + low, arr.begin() + high + 1);
+
+<i>TC and SC</i>
+
+1. TC : O(logn)
+2. SC : O(1)
