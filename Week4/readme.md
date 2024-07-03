@@ -560,5 +560,9 @@ Therefore, the minimum of these cases is 113.
 
 <i>TC and SC</i>
 
-1. TC : O(logn)
+1. TC : O(n\*log(sumOfArray))
 2. SC : O(1)
+
+**GFG. The Painter's Partition Problem-II [problem](https://www.geeksforgeeks.org/problems/the-painters-partition-problem1535/1)**
+
+Same as the previous
