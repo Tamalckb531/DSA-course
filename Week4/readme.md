@@ -521,3 +521,44 @@ Output: [1,2,3,4]
    The binary search run from 16 to 32. Which means log(32-16) = log(16) = 4 times.
    So the entire Loop TC is log(2^4) = log(2^(5-1)) = log(2^(log(32)-1)). ]
 2. SC : O(1)
+
+**GFG. Allocate minimum number of pages [problem](https://www.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1)**
+
+**Similar in LeetCode 1011. Capacity To Ship Packages Within D Days [problem](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/)**
+
+<i>Question :</i>
+Given array is sorted book pages array. We need to distribute this book to m students contiguously and find the minimum number of Maximum pages allocated to a student.
+
+Input: n(array size) = 4, arr[] = {12,34,67,90}, m(total student) = 2
+Output: 113
+Explanation: Allocation can be done in following ways:
+{12} and {34, 67, 90} Maximum Pages = 191
+{12, 34} and {67, 90} Maximum Pages = 157
+{12, 34, 67} and {90} Maximum Pages =113.
+Therefore, the minimum of these cases is 113.
+
+<i>Intuition :</i>
+
+1. We can count all the pages of that array and create a search space for that.
+2. Than we can find the mid and start finding minimum number of pages to allocate.
+3. If the mid pages allocated to all student end up having more pages left or need more student to allocate pages, it can't be a solution. So we will update the start for bigger mid.
+4. If mid end up allocate all the pages, it could be a potential solution. As we are finding the minimum number of pages to allocate.So we will store and compute(update the end).
+
+<i>Approach (Search Space, store and compute) :</i>
+
+1. First we should check if student is more than book. Return -1 than.
+2. Get the endIndex with accumulate function.
+3. Do binary search -> For checking the allocation validation we create a function called isPossibleSolution.
+   1. Here we will have a pageSum = 0 and studentCount = 1.
+   2. Will run a loop for all the book elements.
+      1. First edge case -> any book page bigger than the mid -> return false
+      2. Second edge case -> new book page added in pageSum bigger than the mid -> new student, add the new page to his pageSum -> newStudent is bigger than the actual student -> return false ( Intuition 3 )
+      3. Add the page to the pageSum for a student.
+   3. Return true in the end as it could be a possible solution.
+4. If possible than we store and compute also update the end for minimum page.
+5. If not possible -> we update the start.
+
+<i>TC and SC</i>
+
+1. TC : O(logn)
+2. SC : O(1)
