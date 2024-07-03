@@ -500,3 +500,24 @@ Output: [1,2,3,4]
 
 1. TC : O(logn)
 2. SC : O(1)
+
+**Exponential Search**
+
+<i>Intuition & Approach:</i>
+
+1. Take an index with i=1, and multiply it with 2 over and over til (i < size && arr[i] <= target).
+2. So now instead of doing linear or binary search, you're doing exponential search. Like in 1,2,4,8,16,32... index.
+3. That means you'll get the optimized index real quick. Ex: you're searching 21. Which is not in the 1-16 range -> arr[16] <= target.
+   But in 16-32 range -> arr[32] > target (breaking condition for loop).
+4. After loop break, select the start and end index.
+   start = i/2; (as after 16 the loop run one more time)
+   end = min(i, size-1); (as the 'i' could go beyond size).
+5. Now apply binary search on this optimized index.
+
+<i>TC and SC</i>
+
+1. TC : O(log(2^(log(m)-1)))
+   [ The loop run from 1 to 32 like this : 1-2-4-8-16-32, total 5 times. Which means log(32) times.
+   The binary search run from 16 to 32. Which means log(32-16) = log(16) = 4 times.
+   So the entire Loop TC is log(2^4) = log(2^(5-1)) = log(2^(log(32)-1)). ]
+2. SC : O(1)
