@@ -602,3 +602,28 @@ The minimum distance between cows, in this case, is 3.
 
 1. TC : O(n\*log(end-start of array))
 2. SC : O(1)
+
+**SPOJ. EKO [problem](https://www.spoj.com/problem/EKO/)**
+
+<i>Question :</i>
+An array of tree length will be given. There is a saw machine which is eco friendly. It will cut down tree only for the given total length of cut down part of all trees. So we need to find out minimum height the blade will raise from ground to cut down only these length of tree branches.
+
+Input:
+4 7(total length of cut down part of all trees)
+20 15 10 17
+
+Output:
+15
+
+<i>Intuition & Approach (Search Space, store and compute) : :</i>
+
+1. Just like previous, we will do binary operation. Will store and compute the less number of branch and find for more optimal(start = mid + 1) and will shrink the search space if the branch length exceed minimum branch length given.
+2. Branch length calculation logic :
+   1. Will get a woodCollected variable and run a loop for whole tree vector.
+   2. If a tree is bigger than the mid(or height of blade from ground), then we will store the tree - height of blade in woodCollected.
+   3. After this, we will return true if woodCollected is bigger or equal than minimum wood needed.
+
+<i>TC and SC</i>
+
+1. TC : O(n\*log(maxElem))
+2. SC : O(1)
