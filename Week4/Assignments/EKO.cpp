@@ -29,7 +29,7 @@ long long int maxSawBladeHeight(vector<long long int> &trees, long long int m)
     {
         if (isPossibleSol(trees, m, mid))
         {
-            ans = mid;
+            ans = mid; // height of blade from ground
             start = mid + 1;
         }
         else
