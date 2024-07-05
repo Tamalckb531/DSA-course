@@ -566,3 +566,39 @@ Therefore, the minimum of these cases is 113.
 **GFG. The Painter's Partition Problem-II [problem](https://www.geeksforgeeks.org/problems/the-painters-partition-problem1535/1)**
 
 Same as the previous
+
+**GFG. Aggressive Cows [problem](https://www.geeksforgeeks.org/problems/aggressive-cows/0)**
+
+**Similar in LeetCode 1552. Magnetic Force Between Two Balls [problem](https://leetcode.com/problems/magnetic-force-between-two-balls/)**
+
+<i>Question :</i>
+Given array is stall position where we need place some aggressive cows. We need to place them such that, they don't fight with each other. So minimum distance between them should be maximum.
+
+Input:
+n=5
+k=3
+stalls = [1 2 4 8 9]
+Output:
+3
+Explanation:
+The first cow can be placed at stalls[0],
+the second cow can be placed at stalls[2] and
+the third cow can be placed at stalls[3].
+The minimum distance between cows, in this case, is 3.
+
+<i>Intuition & Approach (Search Space, store and compute) : :</i>
+
+1. We will make a search space for stalls and find out each distance is maximum or not.
+2. As per binary search method, if the position/distance can place all cows we will store and compute for greater distance to find the maximum.
+3. If not then we will make the search space less.
+4. Placement possible or not logic :
+   1. first place one cow and define it's position.
+   2. Run a loop for the stalls -> get each stall position and find out the distance between prev position and this is less the minimum distance that was found by the binary search.
+   3. If so then increase the cowCount and make that position to be cowPos for new cow.
+   4. At last check if cowCount reached the totalCow. If so then return true. -> will proceed 2
+   5. Or else, all cow wasn't able to placed with the minimum distance. Return false -> will proceed 3.
+
+<i>TC and SC</i>
+
+1. TC : O(n\*log(end-start of array))
+2. SC : O(1)
