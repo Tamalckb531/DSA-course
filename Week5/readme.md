@@ -44,3 +44,27 @@ Output: "ca"
 
 1. Linear Loop so TC : O(n)
 2. Only one variable created so SC : O(1)
+
+**LeetCode 680. Valid Palindrome II[problem](https://leetcode.com/problems/valid-palindrome-ii/)**
+
+<i>Question :</i>
+
+Given a string s, return true if the s can be palindrome after deleting at most one character from it.
+
+Input: s = "abca"
+Output: true
+Explanation: You could delete the character 'c'.
+
+<i>Intuition & Approach (two pointer):</i>
+
+1. First set two pointers, one on left(first index) and another on right (last index).
+2. Traverse the whole string til left<=right.
+3. If left and right index character are same then left++ and right--. (palindrome check logic)
+4. If not than delete on char and again run the checkPalindrome logic.
+   1. Now we can delete on character both from left(left+1) and right(right - 1).
+   2. So we will delete char from both side and find out the different output, then return their XOR. As, if one output true than it will satisfy the question.
+
+<i>TC and SC</i>
+
+1. Linear Loop so TC : O(n)
+2. Only one variable created so SC : O(1)
