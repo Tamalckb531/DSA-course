@@ -68,3 +68,37 @@ Explanation: You could delete the character 'c'.
 
 1. Linear Loop so TC : O(n)
 2. Only one variable created so SC : O(1)
+
+**LeetCode 647. Palindromic Substrings[problem](https://leetcode.com/problems/palindromic-substrings/+)**
+
+<i>Question :</i>
+
+Given a string s, return the number of palindromic substrings in it.
+
+A string is a palindrome when it reads the same backward as forward.
+
+A substring is a contiguous sequence of characters within the string.
+
+Input: s = "aaa"
+Output: 6
+Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
+
+<i>Intuition :</i>
+
+1. If we place two pointer in one index of the string, start traversing the string(1, 2, 3, 4 etc) and start expand one to left and one to right, we can actually get all the odd sequence substring possible of the string.
+2. But if we place one pointer ahead of other start traversing the string(1-2 , 2-3 , 3-4 , 4-5 etc) and start expand one to left and one to right, we can actually get all the even sequence substring possible of the string.
+3. Now we can check all selected substrings are palindrome. If so then count them in.
+
+<i>Approach (two pointer) :</i>
+
+1. First traverse the string with the name center as index from 0th index to end index.
+2. Point both pointer in center index. Count the oddCount with expandAroundCenter logic.
+   1. expandAroundCenter has a count variable.
+   2. When the left index and right index is in bound and both index pointed character are same (If two character from equal distance from the middle point are same then it's palindrome) then it increase the count and also expand the left and right index.
+3. Vice versa with evenCount where the right index will be 1 ahead of the left one.
+4. Add both count in totalCount for each traversal and return the totalCount.
+
+<i>TC and SC</i>
+
+1. Both loop can do whole traversal so TC : O(n^2)
+2. SC : O(1)
