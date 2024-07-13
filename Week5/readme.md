@@ -102,3 +102,5 @@ Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 
 1. Both loop can do whole traversal so TC : O(n^2)
 2. SC : O(1)
+
+## Char Arrays & Strings 2:
