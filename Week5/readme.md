@@ -169,3 +169,7 @@ Output: 21
 
 1. TC : O(garbage\*currHouseGarbage length).
 2. SC : O(1)
+
+**LeetCode 791. Custom Sort String[problem](https://leetcode.com/problems/custom-sort-string/)**
+
+Read the problem and answer it. Simple sorting custom comparator can solve it.
