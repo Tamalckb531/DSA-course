@@ -69,7 +69,7 @@ Explanation: You could delete the character 'c'.
 1. Linear Loop so TC : O(n)
 2. Only one variable created so SC : O(1)
 
-**LeetCode 647. Palindromic Substrings[problem](https://leetcode.com/problems/palindromic-substrings/+)**
+**LeetCode 647. Palindromic Substrings[problem](https://leetcode.com/problems/palindromic-substrings/)**
 
 <i>Question :</i>
 
@@ -103,4 +103,39 @@ Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 1. Both loop can do whole traversal so TC : O(n^2)
 2. SC : O(1)
 
-## Char Arrays & Strings 2:
+## Char Arrays & Strings 3:
+
+**LeetCode 2325. Decode the Message[problem](https://leetcode.com/problems/decode-the-message/)**
+
+<i>Question :</i>
+
+You are given the strings key and message, which represent a cipher key and a secret message, respectively. The steps to decode message are as follows:
+
+Use the first appearance of all 26 lowercase English letters in key as the order of the substitution table.
+Align the substitution table with the regular English alphabet.
+Each letter in message is then substituted using the table.
+Spaces ' ' are transformed to themselves.
+For example, given key = "happy boy" (actual key would have at least one instance of each letter in the alphabet), we have the partial substitution table of ('h' -> 'a', 'a' -> 'b', 'p' -> 'c', 'y' -> 'd', 'b' -> 'e', 'o' -> 'f').
+
+Input: key = "the quick brown fox jumps over the lazy dog", message = "vkbs bs t suepuv"
+Output: "this is a secret"
+
+<i>Intuition :</i>
+
+1. We need to create a table mapping for each character of key.
+2. Then just need to retrieve the mapped character for each message character.
+3. Store them in string and return it.
+
+<i>Approach (two pointer) :</i>
+
+1. First handle the space issue. If there is a space in message or key, then it should put or get a space in return. So , mapping[space] = space.
+2. Get an index(for key) and start char with 'a'. Traverse the key til start<='z' and key.length()>index.
+   1. If key char is already exist in map then just increase the index. (find() return mapping.end() if it doesn't find the char as key in map. Use it.)
+   2. If not then increase start and index, also store the start in map.
+3. Start a for loop and get each character of message. find the value for that in map and store it in a decodeMsg.
+4. Return the decode message.
+
+<i>TC and SC</i>
+
+1. Two loop. One for message and other for key so TC : O(n) -> n = max(message_length, key_length)
+2. SC : O(decodeMsg)
