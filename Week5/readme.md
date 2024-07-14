@@ -139,3 +139,33 @@ Output: "this is a secret"
 
 1. Two loop. One for message and other for key so TC : O(n) -> n = max(message_length, key_length)
 2. SC : O(decodeMsg)
+
+**LeetCode 2391. Minimum Amount of Time to Collect Garbage[problem](https://leetcode.com/problems/minimum-amount-of-time-to-collect-garbage/)**
+
+<i>Question :</i>
+
+You are given a 0-indexed array of strings garbage where garbage[i] represents the assortment of garbage at the ith house. garbage[i] consists only of the characters 'M', 'P' and 'G' representing one unit of metal, paper and glass garbage respectively. Picking up one unit of any type of garbage takes 1 minute.
+
+You are also given a 0-indexed integer array travel where travel[i] is the number of minutes needed to go from house i to house i + 1.
+
+There are three garbage trucks in the city, each responsible for picking up one type of garbage. Each garbage truck starts at house 0 and must visit each house in order; however, they do not need to visit every house.
+
+Only one garbage truck may be used at any given moment. While one truck is driving or picking up garbage, the other two trucks cannot do anything.
+
+Return the minimum number of minutes needed to pick up all the garbage.
+
+Input: garbage = ["G","P","GP","GG"], travel = [2,4,3]
+Output: 21
+
+<i>Intuition :</i>
+
+1. Target each house and get the garbage.
+2. Target each garbage and check the type.
+3. Increase the th picking time and track the house index with each type.
+4. Traverse the travel array with lastHouseIndex tracker for each type and count all travel time.
+5. Add all the travel time and picking time of each type together and return it.
+
+<i>TC and SC</i>
+
+1. TC : O(garbage\*currHouseGarbage length).
+2. SC : O(1)
