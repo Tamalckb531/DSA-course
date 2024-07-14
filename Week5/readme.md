@@ -173,3 +173,23 @@ Output: 21
 **LeetCode 791. Custom Sort String[problem](https://leetcode.com/problems/custom-sort-string/)**
 
 Read the problem and answer it. Simple sorting custom comparator can solve it.
+
+**LeetCode 890. Find and Replace Pattern[problem](https://leetcode.com/problems/find-and-replace-pattern/)**
+
+<i>Question :</i>
+
+return the matched pattern words from given words array.
+
+Input: words = ["abc","deq","mee","aqq","dkd","ccc"], pattern = "abb"
+Output: ["mee","aqq"]
+
+<i>Intuition :</i>
+
+1. First of all, all words and pattern should be normalized. Take them in 'abc' format. Like for 'qwwe' -> 'abbc'.
+2. While normalizing the words from words array, check if the normalized version matched with pattern or not.
+3. If so them, store them in a vector of string and return it at last.
+
+<i>TC and SC</i>
+
+1. TC : O(n\*m). -> n = word_size, m = string_size
+2. SC : O(n)
