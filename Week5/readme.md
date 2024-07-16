@@ -193,3 +193,26 @@ Output: ["mee","aqq"]
 
 1. TC : O(n\*m). -> n = word_size, m = string_size
 2. SC : O(n)
+
+# Week 5 (assignment):
+
+**LeetCode 242. Valid Anagram[problem](https://leetcode.com/problems/valid-anagram/)**
+
+<i>Question :</i>
+
+Input: s = "anagram", t = "nagaram"
+Output: true
+
+<i>Intuition :</i>
+
+1. Get a frequencyTable array for 256 size as there are 256 ASCII value for character. Init all index with 0.
+2. Now run two loop, one for the s and another for t string.
+   1. For s, increase count each time encountering a character on it's ASCII equal index.
+   2. For t, decrease count each time encountering a character on it's ASCII equal index.
+3. Now if s and t are anagram them there will be all zero in the frequencyTable or there will be at least one value more than 0 in an index.
+4. Now run a loop and find that out.
+
+<i>TC and SC</i>
+
+1. TC : O(n)
+2. SC : O(1)
