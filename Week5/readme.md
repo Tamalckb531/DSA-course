@@ -242,3 +242,28 @@ Output: "Qedo1ct-eeLg=ntse-T!"
 
 1. TC : O(n)
 2. SC : O(1)
+
+**LeetCode 14. Longest Common Prefix[problem](https://leetcode.com/problems/longest-common-prefix/)**
+
+<i>Question :</i>
+
+Write a function to find the longest common prefix string amongst an array of strings.
+
+If there is no common prefix, return an empty string "".
+
+Input: strs = ["flower","flow","flight"]
+Output: "fl"
+
+<i>Intuition (two pointer approach):</i>
+
+1. First we need an outer loop , which will store the character in ans string and increasing the traverse count of each string. (traverse count should be a global index for that)
+2. Now we need an inner loop where we'll get char(from left) of the first string in strs and match with others same index. If matched than we do nothing.
+3. Now we need to break the inner and outer loop.
+   1. We break the inner loop if any same index character don't match with initial character.
+   2. We break the outer loop if we can't retrieve any char from inner loop.
+4. At last we need to check an edge case in inner loop that, if the index get out of bound of string length than we break the loop.
+
+<i>TC and SC</i>
+
+1. TC : O(n\*m)
+2. SC : O(1)
