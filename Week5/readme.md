@@ -293,3 +293,25 @@ Output: "holle"
 
 1. TC : O(n)
 2. SC : O(1)
+
+**LeetCode 205. Isomorphic Strings [problem](https://leetcode.com/problems/isomorphic-strings/)**
+
+<i>Question :</i>
+
+Given two strings s and t, determine if they are isomorphic.
+
+Two strings s and t are isomorphic if the characters in s can be replaced to get t.
+
+All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character, but a character may map to itself.
+
+Input: s = "egg", t = "add"
+Output: true
+
+<i>Intuition (two pointer approach):</i>
+
+Read the code and practice. (Just copied the code. Didn't understand)
+
+<i>TC and SC</i>
+
+1. TC : O(n)
+2. SC : O(1)
