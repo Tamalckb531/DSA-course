@@ -217,7 +217,7 @@ Output: true
 1. TC : O(n)
 2. SC : O(1)
 
-**LeetCode 917. Reverse Only Letters[problem](https://leetcode.com/problems/reverse-only-letters/)**
+**LeetCode 917. Reverse Only Letters [problem](https://leetcode.com/problems/reverse-only-letters/)**
 
 <i>Question :</i>
 
@@ -243,7 +243,7 @@ Output: "Qedo1ct-eeLg=ntse-T!"
 1. TC : O(n)
 2. SC : O(1)
 
-**LeetCode 14. Longest Common Prefix[problem](https://leetcode.com/problems/longest-common-prefix/)**
+**LeetCode 14. Longest Common Prefix [problem](https://leetcode.com/problems/longest-common-prefix/)**
 
 <i>Question :</i>
 
@@ -266,4 +266,30 @@ Output: "fl"
 <i>TC and SC</i>
 
 1. TC : O(n\*m)
+2. SC : O(1)
+
+**LeetCode 345. Reverse Vowels of a String [problem](https://leetcode.com/problems/reverse-vowels-of-a-string/)**
+
+<i>Question :</i>
+
+Given a string s, reverse only all the vowels in the string and return it.
+
+The vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both lower and upper cases, more than once.
+
+Input: s = "hello"
+Output: "holle"
+
+<i>Intuition (two pointer approach):</i>
+
+1. Get high and low pointers.
+2. Check both sides character.
+   1. If both vowel than swap and move the pointer.
+   2. If one of them now vowel then move the non-vowel pointer to next.
+3. For vowel checking function:
+   1. First make the character to lower.
+   2. Then check a,e,i,o,u with them and return the bool.
+
+<i>TC and SC</i>
+
+1. TC : O(n)
 2. SC : O(1)
