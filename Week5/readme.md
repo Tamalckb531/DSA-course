@@ -315,3 +315,47 @@ Read the code and practice. (Just copied the code. Didn't understand)
 
 1. TC : O(n)
 2. SC : O(1)
+
+**LeetCode 767. Reorganize String [problem](https://leetcode.com/problems/reorganize-string/)**
+
+<i>Question :</i>
+
+Given a string s, rearrange the characters of s so that any two adjacent characters are not the same.
+
+Return any possible rearrangement of s or return "" if not possible.
+
+Input: s = "aab"
+Output: "aba"
+
+<i>Intuition :</i>
+
+1. Get all the occurrence for each character.
+2. Find which character is most frequent out there.
+3. Place the most freq with gap. This character should be placed on the first go as starting again from first can force it to place within the gap. So check if there occurrence are zero after placing them.
+4. Then place all other character's in the gap.
+
+<i>Approach :</i>
+
+1. For getting all occurrence :
+   1. Make a hash for 26 letter occurrence. 0 represents a and 25 represents z.
+   2. Typecase each character into 0-25 by - 'a' and increase there occurrence.
+2. For getting the most frequent :
+   1. Maintain two variable, one for the max_freq(with INT_MIN) and another for the most_freq_char.
+   2. Check if the occurrence is more than max-freq, if so then store it in max_freq and store it + 'a' (type cast into string) to most_freq-char.
+3. Place the most freq char and check in one go :
+   1. Take an index variable.
+   2. Place the most_freq_char in index of s until we cover it's total occ (which is max_freq that will be decrease by one each time) and the index is not crossing the bound of s (index will be increase by two each time).
+   3. If there are still value in max_freq than it's not placed in one go. So we will return empty string.
+4. Place other character :
+   1. Take a loop for 26 letter and traverse all there occurrence until they are 0.
+   2. first check it the index is already larger than the size of s.
+      1. If so than start from 1, as the most_freq_char covered the whole even index.
+      2. If not than let the value be index.
+   3. Place the char with type casting the hash index in char.
+   4. decrease the occ and increase the index by two.
+5. Return the s.
+
+<i>TC and SC</i>
+
+1. TC : O(n)
+2. SC : O(1)
