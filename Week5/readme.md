@@ -380,5 +380,5 @@ Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
 
 <i>TC and SC</i>
 
-1. TC : O(n)
-2. SC : O(1)
+1. TC : O(nklogk)
+2. SC : O(nk)
