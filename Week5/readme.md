@@ -382,3 +382,5 @@ Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
 
 1. TC : O(nklogk)
 2. SC : O(nk)
+
+**LeetCode 5. Longest Palindromic Substring [problem](https://leetcode.com/problems/longest-palindromic-substring/)**
