@@ -384,3 +384,5 @@ Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
 2. SC : O(nk)
 
 **LeetCode 5. Longest Palindromic Substring [problem](https://leetcode.com/problems/longest-palindromic-substring/)**
+
+**LeetCode 28. Find the Index of the First Occurrence in a String [problem](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)**
