@@ -390,3 +390,5 @@ Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
 **LeetCode 8. String to Integer (atoi)[problem](https://leetcode.com/problems/string-to-integer-atoi/)** -> **Do it again**
 
 **LeetCode 12. Integer to Roman[problem](https://leetcode.com/problems/integer-to-roman/)**
+
+**LeetCode 6. Zigzag Conversion[problem](https://leetcode.com/problems/zigzag-conversion/)**
