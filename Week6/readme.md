@@ -4,6 +4,6 @@
 
 **LeetCode 204. Count Primes [problem](https://leetcode.com/problems/count-primes/) -> Sieve Of Eratosthenes**
 
-**GFG: GCD of two numbers [problem](https://www.geeksforgeeks.org/problems/gcd-of-two-numbers3459/1) -> Sieve Of Eratosthenes**
+**GFG: GCD of two numbers [problem](https://www.geeksforgeeks.org/problems/gcd-of-two-numbers3459/1)**
 
 # Week 6 (assignment):
