@@ -404,3 +404,5 @@ Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
 # Week 5 (Mega):
 
 **LeetCode 1781. Sum of Beauty of All Substrings[problem](https://leetcode.com/problems/sum-of-beauty-of-all-substrings/)**
+
+**HackerRank: Sherlock and Anagrams[problem](https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem)**
