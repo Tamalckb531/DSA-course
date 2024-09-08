@@ -8,4 +8,8 @@
 
 BinarySearch, SearchInArray, DigitSplitter
 
+## Recursion 3 :
+
+**LeetCode 322. Coin Change [problem](https://leetcode.com/problems/coin-change/)**
+
 # Week 6 (assignment):
