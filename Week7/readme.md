@@ -10,6 +10,10 @@ BinarySearch, SearchInArray, DigitSplitter
 
 ## Recursion 3 :
 
-**LeetCode 322. Coin Change [problem](https://leetcode.com/problems/coin-change/)**
+**LeetCode 322. Coin Change [problem](https://leetcode.com/problems/coin-change/) Should Be Optimized Later**
 
-# Week 6 (assignment):
+## Week 7 (Mega class):
+
+**LeetCode 416. Partition Equal Subset Sum [problem](https://leetcode.com/problems/partition-equal-subset-sum/) Should Be Optimized Later**
+
+# Week 7 (assignment):
