@@ -20,4 +20,6 @@ BinarySearch, SearchInArray, DigitSplitter
 
 **LeetCode 55. Jump Game [problem](https://leetcode.com/problems/jump-game/) Should Be Optimized Later**
 
+**LeetCode 45. Jump Game II [problem](https://leetcode.com/problems/jump-game-ii/) Should Be Optimized Later**
+
 # Week 7 (assignment):
