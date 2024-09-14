@@ -26,6 +26,8 @@ BinarySearch, SearchInArray, DigitSplitter
 
 # Week 7 (Marathon):
 
-**GFG Count derangement [discussion](https://www.geeksforgeeks.org/count-derangements-permutation-such-that-no-element-appears-in-its-original-position/)**
+**GFG Count derangement[discussion](https://www.geeksforgeeks.org/count-derangements-permutation-such-that-no-element-appears-in-its-original-position/)**
+
+**GFG Painting the Fence[problem](https://www.geeksforgeeks.org/problems/painting-the-fence3727/1)Should Be Optimized Later**
 
 # Week 7 (assignment):
