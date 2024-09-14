@@ -24,4 +24,8 @@ BinarySearch, SearchInArray, DigitSplitter
 
 **LeetCode 120. Triangle[problem](https://leetcode.com/problems/triangle/) Should Be Optimized Later**
 
+# Week 7 (Marathon):
+
+**GFG Count derangement [discussion](https://www.geeksforgeeks.org/count-derangements-permutation-such-that-no-element-appears-in-its-original-position/)**
+
 # Week 7 (assignment):
