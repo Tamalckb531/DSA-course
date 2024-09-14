@@ -30,4 +30,6 @@ BinarySearch, SearchInArray, DigitSplitter
 
 **GFG Painting the Fence[problem](https://www.geeksforgeeks.org/problems/painting-the-fence3727/1)Should Be Optimized Later**
 
+**LeetCode 120. Triangle[problem](https://leetcode.com/problems/maximal-square/) Should Be Optimized Later**
+
 # Week 7 (assignment):
