@@ -10,6 +10,10 @@ merge sort
 
 **GFG Rat in a Maze Problem - I [problem](https://www.geeksforgeeks.org/problems/rat-in-a-maze-problem/1)**
 
+## BackTracking & DnC 3:
+
+permutation with pass by reference
+
 # Week 8 (Mega class):
 
 # Week 8 (assignment):
