@@ -20,6 +20,8 @@ permutation with pass by reference
 
 **LeetCode 37. Sudoku Solver [problem](https://leetcode.com/problems/sudoku-solver/)**
 
+**LeetCode 17. Letter Combinations of a Phone Number [problem](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)**
+
 # Week 8 (Mega class):
 
 # Week 8 (assignment):
