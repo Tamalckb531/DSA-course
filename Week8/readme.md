@@ -18,6 +18,8 @@ permutation with pass by reference
 
 **LeetCode 51. N-Queens [problem](https://leetcode.com/problems/n-queens/)**
 
+**LeetCode 37. Sudoku Solver [problem](https://leetcode.com/problems/sudoku-solver/)**
+
 # Week 8 (Mega class):
 
 # Week 8 (assignment):
