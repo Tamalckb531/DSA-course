@@ -30,4 +30,6 @@ permutation with pass by reference
 
 **LeetCode 79. Word Search [problem](https://leetcode.com/problems/word-search/)**
 
+**LeetCode 52. N-Queens II [problem](https://leetcode.com/problems/n-queens-ii/)**
+
 # Week 8 (assignment):
