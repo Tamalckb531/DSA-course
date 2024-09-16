@@ -26,4 +26,6 @@ permutation with pass by reference
 
 **LeetCode 22. Generate Parentheses [problem](https://leetcode.com/problems/generate-parentheses/)**
 
+**LeetCode 77. Combinations [problem](https://leetcode.com/problems/combinations/)**
+
 # Week 8 (assignment):
