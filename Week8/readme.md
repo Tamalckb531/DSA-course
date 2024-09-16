@@ -16,6 +16,8 @@ permutation with pass by reference
 
 **LeetCode 46. Permutations [problem](https://leetcode.com/problems/permutations/)**
 
+**LeetCode 51. N-Queens [problem](https://leetcode.com/problems/n-queens/)**
+
 # Week 8 (Mega class):
 
 # Week 8 (assignment):
