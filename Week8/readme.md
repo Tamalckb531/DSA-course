@@ -28,4 +28,6 @@ permutation with pass by reference
 
 **LeetCode 77. Combinations [problem](https://leetcode.com/problems/combinations/)**
 
+**LeetCode 79. Word Search [problem](https://leetcode.com/problems/word-search/)**
+
 # Week 8 (assignment):
