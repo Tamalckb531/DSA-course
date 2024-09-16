@@ -24,4 +24,6 @@ permutation with pass by reference
 
 # Week 8 (Mega class):
 
+**LeetCode 22. Generate Parentheses [problem](https://leetcode.com/problems/generate-parentheses/)**
+
 # Week 8 (assignment):
