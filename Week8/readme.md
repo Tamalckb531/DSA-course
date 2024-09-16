@@ -14,6 +14,8 @@ merge sort
 
 permutation with pass by reference
 
+**LeetCode 46. Permutations [problem](https://leetcode.com/problems/permutations/)**
+
 # Week 8 (Mega class):
 
 # Week 8 (assignment):
