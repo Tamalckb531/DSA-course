@@ -32,6 +32,6 @@ permutation with pass by reference
 
 **LeetCode 52. N-Queens II [problem](https://leetcode.com/problems/n-queens-ii/)**
 
-**LeetCode 473. Matchsticks to Square [problem](https://leetcode.com/problems/matchsticks-to-square/)**
+**LeetCode 473. Matchsticks to Square [problem](https://leetcode.com/problems/matchsticks-to-square/) DIDN'T UNDERSTAND**
 
 # Week 8 (assignment):
