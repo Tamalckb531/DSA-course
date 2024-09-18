@@ -35,3 +35,5 @@ BinarySearch, SearchInArray, DigitSplitter
 # Week 7 (assignment):
 
 **LeetCode 121. Best Time to Buy and Sell Stock[problem](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)**
+
+**LeetCode 198. House Robber[problem](https://leetcode.com/problems/house-robber/) Should Be Optimized Later**
