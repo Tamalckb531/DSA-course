@@ -43,3 +43,5 @@ BinarySearch, SearchInArray, DigitSplitter
 **LeetCode 1155. Number of Dice Rolls With Target Sum[problem](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/) Should Be Optimized Later**
 
 **LeetCode 279. Perfect Squares[problem](https://leetcode.com/problems/perfect-squares/) Should Be Optimized Later**
+
+**LeetCode 983. Minimum Cost For Tickets[problem](https://leetcode.com/problems/minimum-cost-for-tickets/) Should Be Optimized Later**
