@@ -39,3 +39,5 @@ BinarySearch, SearchInArray, DigitSplitter
 **LeetCode 198. House Robber[problem](https://leetcode.com/problems/house-robber/) Should Be Optimized Later**
 
 **LeetCode 44. Wildcard Matching[problem](https://leetcode.com/problems/wildcard-matching/) Should Be Optimized Later**
+
+**LeetCode 1155. Number of Dice Rolls With Target Sum[problem](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/) Should Be Optimized Later**
