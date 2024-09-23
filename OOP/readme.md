@@ -5,3 +5,7 @@ Constructor(copy,parameterized), Attributes, Methods, Destructor, Dynamic Memory
 # Encapsulation
 
 Private, Getter, Setter
+
+# Inheritance
+
+mode, type
