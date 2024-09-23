@@ -9,3 +9,7 @@ Private, Getter, Setter
 # Inheritance
 
 mode, type
+
+# Polymorphism
+
+compile time, run time, final keyword, virtual keyword
