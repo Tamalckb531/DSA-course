@@ -4,6 +4,10 @@
 
 Singly LinkedList -> creation, insertion in head;tail;position , search, delete
 
+## Linked List 2
+
+Doubly LinkedList -> creation, insertion in head;tail;position , search, delete
+
 # Week 10 (Mega class):
 
 # Week 10 (assignment):
