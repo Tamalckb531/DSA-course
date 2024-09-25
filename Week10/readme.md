@@ -12,6 +12,8 @@ Doubly LinkedList -> creation, insertion in head;tail;position , search, delete
 
 **LeetCode 206. Reverse Linked List [problem](https://leetcode.com/problems/reverse-linked-list/)**
 
+**LeetCode 876. Middle of the Linked List [problem](https://leetcode.com/problems/middle-of-the-linked-list/)**
+
 # Week 10 (Mega class):
 
 # Week 10 (assignment):
