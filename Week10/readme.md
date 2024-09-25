@@ -14,6 +14,8 @@ Doubly LinkedList -> creation, insertion in head;tail;position , search, delete
 
 **LeetCode 876. Middle of the Linked List [problem](https://leetcode.com/problems/middle-of-the-linked-list/)**
 
+**LeetCode 234. Palindrome Linked List [problem](https://leetcode.com/problems/palindrome-linked-list/)**
+
 # Week 10 (Mega class):
 
 # Week 10 (assignment):
