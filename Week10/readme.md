@@ -24,6 +24,8 @@ Doubly LinkedList -> creation, insertion in head;tail;position , search, delete
 
 **GFG: Sort a linked list of 0s, 1s and 2s[problem](https://www.geeksforgeeks.org/problems/given-a-linked-list-of-0s-1s-and-2s-sort-it/1)**
 
+**GFG: Add 1 to a Linked List Number[problem](https://www.geeksforgeeks.org/problems/add-1-to-a-number-represented-as-linked-list/1)**
+
 # Week 10 (Mega class):
 
 # Week 10 (assignment):
