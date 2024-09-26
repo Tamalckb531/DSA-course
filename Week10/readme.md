@@ -19,7 +19,10 @@ Doubly LinkedList -> creation, insertion in head;tail;position , search, delete
 ## Linked List 4
 
 **LeetCode 141. Linked List Cycle[problem](https://leetcode.com/problems/linked-list-cycle/) Most Important**
+
 **LeetCode 83. Remove Duplicates from Sorted List[problem](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) Most Important**
+
+**GFG: Sort a linked list of 0s, 1s and 2s[problem](https://www.geeksforgeeks.org/problems/given-a-linked-list-of-0s-1s-and-2s-sort-it/1)**
 
 # Week 10 (Mega class):
 
