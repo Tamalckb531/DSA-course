@@ -14,7 +14,12 @@ Doubly LinkedList -> creation, insertion in head;tail;position , search, delete
 
 **LeetCode 876. Middle of the Linked List [problem](https://leetcode.com/problems/middle-of-the-linked-list/)**
 
-**LeetCode 234. Palindrome Linked List [problem](https://leetcode.com/problems/palindrome-linked-list/)**
+**LeetCode 234. Palindrome Linked List [problem](https://leetcode.com/problems/palindrome-linked-list/) Didn't understand**
+
+## Linked List 4
+
+**LeetCode 141. Linked List Cycle[problem](https://leetcode.com/problems/linked-list-cycle/) Most Important**
+**LeetCode 83. Remove Duplicates from Sorted List[problem](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) Most Important**
 
 # Week 10 (Mega class):
 
