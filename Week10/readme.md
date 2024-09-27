@@ -30,4 +30,6 @@ Doubly LinkedList -> creation, insertion in head;tail;position , search, delete
 
 # Week 10 (Mega class):
 
+**LeetCode 2. Add Two Numbers[problem](https://leetcode.com/problems/add-two-numbers/)**
+
 # Week 10 (assignment):
