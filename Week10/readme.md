@@ -26,6 +26,8 @@ Doubly LinkedList -> creation, insertion in head;tail;position , search, delete
 
 **GFG: Add 1 to a Linked List Number[problem](https://www.geeksforgeeks.org/problems/add-1-to-a-number-represented-as-linked-list/1)**
 
+**LeetCode 25. Reverse Nodes in k-Group[problem](https://leetcode.com/problems/reverse-nodes-in-k-group/) Most Important**
+
 # Week 10 (Mega class):
 
 # Week 10 (assignment):
