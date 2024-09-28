@@ -34,4 +34,6 @@ Doubly LinkedList -> creation, insertion in head;tail;position , search, delete
 
 **LeetCode 725. Split Linked List in Parts[problem](https://leetcode.com/problems/split-linked-list-in-parts/)**
 
+**LeetCode 430. Flatten a Multilevel Doubly Linked List[problem](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/)**
+
 # Week 10 (assignment):
