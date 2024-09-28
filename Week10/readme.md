@@ -32,4 +32,6 @@ Doubly LinkedList -> creation, insertion in head;tail;position , search, delete
 
 **LeetCode 2. Add Two Numbers[problem](https://leetcode.com/problems/add-two-numbers/)**
 
+**LeetCode 725. Split Linked List in Parts[problem](https://leetcode.com/problems/split-linked-list-in-parts/)**
+
 # Week 10 (assignment):
