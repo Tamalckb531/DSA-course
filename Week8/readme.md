@@ -2,7 +2,7 @@
 
 ## BackTracking & DnC 1:
 
-merge sort
+merge sort, **Learn In Place Merge sort**
 
 **GFG Quick Sort [problem](https://www.geeksforgeeks.org/problems/quick-sort/1)**
 
@@ -35,3 +35,5 @@ permutation with pass by reference
 **LeetCode 473. Matchsticks to Square [problem](https://leetcode.com/problems/matchsticks-to-square/) DIDN'T UNDERSTAND**
 
 # Week 8 (assignment):
+
+**HackerRank Merge Sort: Counting Inversions [problem](https://www.hackerrank.com/challenges/ctci-merge-sort/problem) DIDN'T UNDERSTAND || need to understand merge sort more**
