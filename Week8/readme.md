@@ -37,3 +37,5 @@ permutation with pass by reference
 # Week 8 (assignment):
 
 **HackerRank Merge Sort: Counting Inversions [problem](https://www.hackerrank.com/challenges/ctci-merge-sort/problem) DIDN'T UNDERSTAND || need to understand merge sort more**
+
+**LeetCode 39. Combination Sum [problem](https://leetcode.com/problems/combination-sum/)**
