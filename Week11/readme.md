@@ -2,7 +2,8 @@
 
 ## Stack 1
 
-Implementation of normal and two pointer stack
+Implementation of normal and two pointer stack <br/>
+insertAtBottom
 
 ## Stack 2
 
