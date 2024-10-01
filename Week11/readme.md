@@ -7,6 +7,8 @@ insertAtBottom
 
 ## Stack 2
 
+middleElement, checkSorted, reverseStack, sortedInsert <br/>
+
 ## Stack 3
 
 # Week 11 (Mega class):
