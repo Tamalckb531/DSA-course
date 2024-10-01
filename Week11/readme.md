@@ -13,6 +13,8 @@ middleElement, checkSorted, reverseStack, sortedInsert
 
 ## Stack 3
 
+smallestInRight
+
 # Week 11 (Mega class):
 
 # Week 11 (assignment):
