@@ -15,6 +15,8 @@ middleElement, checkSorted, reverseStack, sortedInsert
 
 smallestInRight
 
+**LeetCode 84. Largest Rectangle in Histogram[problem](https://leetcode.com/problems/largest-rectangle-in-histogram/) Do it again**
+
 # Week 11 (Mega class):
 
 # Week 11 (assignment):
