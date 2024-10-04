@@ -23,4 +23,6 @@ smallestInRight
 
 **LeetCode 907. Sum of SubArray Minimums[problem](https://leetcode.com/problems/sum-of-subarray-minimums/description/) Have issue with subArray and next and prev minimum number so didn't understand it, Need to do next**
 
+**LeetCode 2104. Sum of Subarray Ranges[problem](https://leetcode.com/problems/sum-of-subarray-ranges/) same goes for this like previous**
+
 # Week 11 (assignment):
