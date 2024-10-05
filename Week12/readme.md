@@ -4,8 +4,6 @@
 
 Basic Queue, Deque, circular queue, Circular Deque
 
-**LeetCode n. X[problem](link)**
-
 ## Queue 2
 
 reverseQueue, reverseKGroup
@@ -15,6 +13,8 @@ reverseQueue, reverseKGroup
 **GFG: First negative in every window of size k [problem](https://www.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1)**
 
 ## Queue 3
+
+**LeetCode 239. Sliding Window Maximum[problem](https://leetcode.com/problems/sliding-window-maximum/)**
 
 # Week 12 (Mega class):
 
