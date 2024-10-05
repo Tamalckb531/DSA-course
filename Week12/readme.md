@@ -12,6 +12,8 @@ reverseQueue, reverseKGroup
 
 **GFG: Interleave the First Half of the Queue with Second Half [problem](https://www.geeksforgeeks.org/problems/interleave-the-first-half-of-the-queue-with-second-half/0)**
 
+**GFG: First negative in every window of size k [problem](https://www.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1)**
+
 ## Queue 3
 
 # Week 12 (Mega class):
