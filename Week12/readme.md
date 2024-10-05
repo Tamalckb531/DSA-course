@@ -2,7 +2,7 @@
 
 ## Queue 1
 
-Basic Queue
+Basic Queue, Deque, circular queue, Circular Deque
 
 **LeetCode n. X[problem](link)**
 
