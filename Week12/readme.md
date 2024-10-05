@@ -8,6 +8,8 @@ Basic Queue, Deque, circular queue, Circular Deque
 
 ## Queue 2
 
+reverseQueue, reverseKGroup
+
 ## Queue 3
 
 # Week 12 (Mega class):
