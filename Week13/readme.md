@@ -2,14 +2,14 @@
 
 ## Tree 1
 
-BinaryTree with all traversal
+BinaryTree with all traversal <br/>
+
+**LeetCode 104. Maximum Depth of Binary Tree[problem](https://leetcode.com/problems/maximum-depth-of-binary-tree/)**
 
 ## Tree 2
 
 ## Tree 3
 
 # Week 13 (Mega class):
-
-**LeetCode n. x[problem](link)**
 
 # Week 13 (assignment):
