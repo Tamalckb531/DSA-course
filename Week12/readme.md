@@ -26,4 +26,6 @@ reverseQueue, reverseKGroup
 
 **LeetCode 649. Dota2 Senate[problem](https://leetcode.com/problems/dota2-senate/)**
 
+**GFG: Steps by Knight[problem](https://www.geeksforgeeks.org/problems/steps-by-knight5927/1)**
+
 # Week 12 (assignment):
