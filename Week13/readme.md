@@ -12,6 +12,8 @@ BinaryTree with all traversal <br/>
 
 **LeetCode 110. Balanced Binary Tree[problem](https://leetcode.com/problems/balanced-binary-tree/)**
 
+**LeetCode 236. Lowest Common Ancestor of a Binary Tree[problem](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)**
+
 ## Tree 3
 
 # Week 13 (Mega class):
