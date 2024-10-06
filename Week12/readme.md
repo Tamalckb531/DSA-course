@@ -24,4 +24,6 @@ reverseQueue, reverseKGroup
 
 **LeetCode 341. Flatten Nested List Iterator[problem](https://leetcode.com/problems/flatten-nested-list-iterator/) LLD+DSA**
 
+**LeetCode 649. Dota2 Senate[problem](https://leetcode.com/problems/dota2-senate/)**
+
 # Week 12 (assignment):
