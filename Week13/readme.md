@@ -14,6 +14,8 @@ BinaryTree with all traversal <br/>
 
 **LeetCode 236. Lowest Common Ancestor of a Binary Tree[problem](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)**
 
+**LeetCode 112. Path Sum[problem](https://leetcode.com/problems/path-sum/)**
+
 ## Tree 3
 
 # Week 13 (Mega class):
