@@ -16,6 +16,10 @@ reverseQueue, reverseKGroup
 
 **LeetCode 239. Sliding Window Maximum[problem](https://leetcode.com/problems/sliding-window-maximum/)**
 
+**GFG: First non-repeating character in a stream [problem](https://www.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1) Question is confusing**
+
+**LeetCode 134. Gas Station[problem](https://leetcode.com/problems/gas-station/)**
+
 # Week 12 (Mega class):
 
 # Week 12 (assignment):
