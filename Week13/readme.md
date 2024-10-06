@@ -10,6 +10,8 @@ BinaryTree with all traversal <br/>
 
 ## Tree 2
 
+**LeetCode 110. Balanced Binary Tree[problem](https://leetcode.com/problems/balanced-binary-tree/)**
+
 ## Tree 3
 
 # Week 13 (Mega class):
