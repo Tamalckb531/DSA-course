@@ -16,7 +16,7 @@ BinaryTree with all traversal <br/>
 
 **LeetCode 112. Path Sum[problem](https://leetcode.com/problems/path-sum/)**
 
-**LeetCode 112. Path Sum[problem](https://leetcode.com/problems/path-sum-ii/)**
+**LeetCode 113. Path Sum II[problem](https://leetcode.com/problems/path-sum-ii/)**
 
 ## Tree 3
 
