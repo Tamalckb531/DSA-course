@@ -22,4 +22,6 @@ reverseQueue, reverseKGroup
 
 # Week 12 (Mega class):
 
+**LeetCode 341. Flatten Nested List Iterator[problem](https://leetcode.com/problems/flatten-nested-list-iterator/) LLD+DSA**
+
 # Week 12 (assignment):
