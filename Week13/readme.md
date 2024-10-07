@@ -24,6 +24,8 @@ BinaryTree with all traversal <br/>
 
 **LeetCode 106. Construct Binary Tree from Inorder and Postorder Traversal[problem](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)**
 
+**GFG Tree Boundary Traversal [problem](https://www.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1)**
+
 # Week 13 (Mega class):
 
 # Week 13 (assignment):
