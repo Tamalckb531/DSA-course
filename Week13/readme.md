@@ -20,6 +20,8 @@ BinaryTree with all traversal <br/>
 
 ## Tree 3
 
+**LeetCode 105. Construct Binary Tree from Preorder and Inorder Traversal[problem](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)**
+
 # Week 13 (Mega class):
 
 # Week 13 (assignment):
