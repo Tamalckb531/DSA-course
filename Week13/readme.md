@@ -28,6 +28,8 @@ BinaryTree with all traversal <br/>
 
 **LeetCode 1199. Binary Tree Right Side View[problem](https://leetcode.com/problems/binary-tree-right-side-view/)**
 
+**GFG Bottom View of Binary Tree [problem](https://www.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1) need to study again**
+
 # Week 13 (Mega class):
 
 # Week 13 (assignment):
