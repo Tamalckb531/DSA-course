@@ -36,4 +36,6 @@ BinaryTree with all traversal <br/>
 
 **LeetCode 863. All Nodes Distance K in Binary Tree[problem](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)**
 
+**LeetCode 222. Count Complete Tree Nodes[problem](https://leetcode.com/problems/count-complete-tree-nodes/)**
+
 # Week 13 (assignment):
