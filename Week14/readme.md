@@ -8,6 +8,8 @@ Creation and Traversal of BST <br/>
 
 ## BST 2
 
+**LeetCode 653. Two Sum IV - Input is a BST[problem](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/)**
+
 ## BST 3
 
 # Week 14 (Mega class):
