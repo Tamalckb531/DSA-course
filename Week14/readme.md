@@ -18,6 +18,8 @@ Creation and Traversal of BST <br/>
 
 ## BST 3
 
+**LeetCode 108. Convert Sorted Array to Binary Search Tree[problem](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)**
+
 # Week 14 (Mega class):
 
 # Week 14 (assignment):
