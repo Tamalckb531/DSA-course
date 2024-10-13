@@ -14,6 +14,8 @@ Creation and Traversal of BST <br/>
 
 **LeetCode 230. Kth Smallest Element in a BST[problem](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) IMP**
 
+**LeetCode 235. Lowest Common Ancestor of a Binary Search Tree[problem](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) IMP**
+
 ## BST 3
 
 # Week 14 (Mega class):
