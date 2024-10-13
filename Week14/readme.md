@@ -10,7 +10,9 @@ Creation and Traversal of BST <br/>
 
 **LeetCode 653. Two Sum IV - Input is a BST[problem](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/)**
 
-**LeetCode 1038. Binary Search Tree to Greater Sum Tree[problem](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/)**
+**LeetCode 1038. Binary Search Tree to Greater Sum Tree[problem](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/) IMP**
+
+**LeetCode 230. Kth Smallest Element in a BST[problem](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) IMP**
 
 ## BST 3
 
