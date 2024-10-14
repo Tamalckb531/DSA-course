@@ -24,6 +24,8 @@ Creation and Traversal of BST <br/>
 
 **LeetCode 109. Convert Sorted List to Binary Search Tree[problem](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/)**
 
+**LeetCode 1373. Maximum Sum BST in Binary Tree[problem](https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/)**
+
 # Week 14 (Mega class):
 
 # Week 14 (assignment):
