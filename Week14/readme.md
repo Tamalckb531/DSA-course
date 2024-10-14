@@ -28,4 +28,6 @@ Creation and Traversal of BST <br/>
 
 # Week 14 (Mega class):
 
+**LeetCode 783. Minimum Distance Between BST Nodes[problem](https://leetcode.com/problems/minimum-distance-between-bst-nodes/)**
+
 # Week 14 (assignment):
