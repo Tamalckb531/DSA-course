@@ -30,6 +30,8 @@ Creation and Traversal of BST <br/>
 
 **LeetCode 783. Minimum Distance Between BST Nodes[problem](https://leetcode.com/problems/minimum-distance-between-bst-nodes/)**
 
-**LeetCode 98. Validate Binary Search Tree[problem](https://leetcode.com/problems/validate-binary-search-tree/)**
+**LeetCode 98. Validate Binary Search Tree[problem](https://leetcode.com/problems/validate-binary-search-tree/) IMP**
+
+**LeetCode 173. Binary Search Tree Iterator [problem](https://leetcode.com/problems/binary-search-tree-iterator/) IMP + Design**
 
 # Week 14 (assignment):
