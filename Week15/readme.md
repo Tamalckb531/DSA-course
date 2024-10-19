@@ -14,6 +14,8 @@ STL <br/>
 
 **GFG: Is Binary Tree Heap [problem](https://www.geeksforgeeks.org/problems/is-binary-tree-heap/1)**
 
+**GFG: Minimum Cost of ropes [problem](https://www.geeksforgeeks.org/problems/minimum-cost-of-ropes-1587115620/1)**
+
 ## Heap 3
 
 # Week 15 (Mega class):
