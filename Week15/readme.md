@@ -18,6 +18,8 @@ STL <br/>
 
 ## Heap 3
 
+**GFG: Merge k Sorted Arrays [problem](https://www.geeksforgeeks.org/problems/merge-k-sorted-arrays/1)**
+
 # Week 15 (Mega class):
 
 # Week 15 (assignment):
