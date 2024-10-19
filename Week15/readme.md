@@ -12,6 +12,8 @@ STL <br/>
 
 **LeetCode 958. Check Completeness of a Binary Tree [problem](https://leetcode.com/problems/check-completeness-of-a-binary-tree/)**
 
+**GFG: Is Binary Tree Heap [problem](https://www.geeksforgeeks.org/problems/is-binary-tree-heap/1)**
+
 ## Heap 3
 
 # Week 15 (Mega class):
