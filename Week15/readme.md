@@ -22,7 +22,7 @@ STL <br/>
 
 **LeetCode 23. Merge k Sorted Lists [problem](https://leetcode.com/problems/merge-k-sorted-lists/) need recheck**
 
-**LeetCode 632. Smallest Range Covering Elements from K Lists [problem](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/) need recheck || same as prev two**
+**LeetCode 632. Smallest Range Covering Elements from K Lists [problem](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/) need recheck**
 
 # Week 15 (Mega class):
 
