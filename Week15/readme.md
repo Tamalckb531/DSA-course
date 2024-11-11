@@ -24,6 +24,8 @@ STL <br/>
 
 **LeetCode 632. Smallest Range Covering Elements from K Lists [problem](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/) need recheck**
 
+**LeetCode 295. Find Median from Data Stream [problem](https://leetcode.com/problems/find-median-from-data-stream/)**
+
 # Week 15 (Mega class):
 
 # Week 15 (assignment):
