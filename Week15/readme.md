@@ -30,4 +30,6 @@ STL <br/>
 
 **LeetCode 347. Top K Frequent Elements[problem](https://leetcode.com/problems/top-k-frequent-elements/)**
 
+**LeetCode 1753. Maximum Score From Removing Stones[problem](https://leetcode.com/problems/maximum-score-from-removing-stones/)**
+
 # Week 15 (assignment):
