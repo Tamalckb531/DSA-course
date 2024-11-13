@@ -6,6 +6,8 @@
 
 ## Maps&Trie 2
 
+TrieBasic
+
 ## Maps&Trie 3
 
 # Week 16 (Mega class):
