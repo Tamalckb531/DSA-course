@@ -12,6 +12,8 @@ TrieBasic
 
 **LeetCode 208. Implement Trie (Prefix Tree)[problem](https://leetcode.com/problems/implement-trie-prefix-tree/)**
 
+**LeetCode 14. Longest Common Prefix[problem](https://leetcode.com/problems/longest-common-prefix/)**
+
 # Week 16 (Mega class):
 
 # Week 16 (assignment):
