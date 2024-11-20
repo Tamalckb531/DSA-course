@@ -16,4 +16,6 @@ TrieBasic
 
 # Week 16 (Mega class):
 
+**LeetCode 187. Repeated DNA Sequences[problem](https://leetcode.com/problems/repeated-dna-sequences/)**
+
 # Week 16 (assignment):
