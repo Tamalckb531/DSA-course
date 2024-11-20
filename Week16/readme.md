@@ -20,4 +20,6 @@ TrieBasic
 
 **LeetCode 211. Design Add and Search Words Data Structure[problem](https://leetcode.com/problems/design-add-and-search-words-data-structure/)**
 
+**LeetCode 676. Implement Magic Dictionary[problem](https://leetcode.com/problems/implement-magic-dictionary/)**
+
 # Week 16 (assignment):
