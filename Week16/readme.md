@@ -22,4 +22,6 @@ TrieBasic
 
 **LeetCode 676. Implement Magic Dictionary[problem](https://leetcode.com/problems/implement-magic-dictionary/)**
 
+**LeetCode 1268. Search Suggestions System[problem](https://leetcode.com/problems/search-suggestions-system/)**
+
 # Week 16 (assignment):
