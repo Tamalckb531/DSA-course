@@ -18,4 +18,6 @@ TrieBasic
 
 **LeetCode 187. Repeated DNA Sequences[problem](https://leetcode.com/problems/repeated-dna-sequences/)**
 
+**LeetCode 211. Design Add and Search Words Data Structure[problem](https://leetcode.com/problems/design-add-and-search-words-data-structure/)**
+
 # Week 16 (assignment):
