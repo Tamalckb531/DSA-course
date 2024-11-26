@@ -2,7 +2,9 @@
 
 ## DP 1
 
-Basic technique of DP : solve it in recursive way -> store the ans of recursion in an array and return it from the array -> before doing recursive process, look at the dp array if the ans for the changeable variable parameter is exist or not.
+<b>Top-down approach of DP :</b> solve it in recursive way -> store the ans of recursion in an array and return it from the array -> before doing recursive process, look at the dp array if the ans for the changeable variable parameter is exist or not. <br/>
+
+<b>Bottom-up approach of DP :</b> create dp array -> analyze base cases and update dp array -> check parameter and reverse it and run a loop <br/>
 
 **LeetCode 509. Fibonacci Number[problem](https://leetcode.com/problems/fibonacci-number/)**
 
