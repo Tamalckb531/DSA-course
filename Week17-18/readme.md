@@ -12,6 +12,8 @@
 
 ## DP 2
 
+**LeetCode 198. House Robber[problem](https://leetcode.com/problems/house-robber/)**
+
 ## DP 3
 
 ## DP 4
