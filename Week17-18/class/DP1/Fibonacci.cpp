@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
 class Solution
 {
 public:
@@ -49,17 +48,49 @@ public:
         return dp[n];
     }
 
+    int solveUsingTabSpaceOpt(int n)
+    {
+        //? create dp array
+        vector<int> dp(3, -1);
+
+        //! safe check
+        if (n == 0)
+            return 0; // as it will create a run time error for dp[1] access
+
+        //? base case analysis
+        dp[0] = 0;
+        dp[1] = 1;
+
+        //? check parameter and make a reverse loop without taking the base case -> write the optimal logic
+        for (int i = 2; i <= n; i++)
+        {
+            dp[2] = dp[1] + dp[0];
+            dp[0] = dp[1];
+            dp[1] = dp[2];
+        }
+
+        return dp[2];
+    }
+
     int fib(int n)
     {
+        //? ------- Top-Down --------
+
         // vector<int>dp(n+1,-1);
         // int ans = solveUsingMemo(n,dp);
         // return ans;
+
+        //? ------- Bottom-Up --------
+
+        // int ans = solveUsingTabulation(n);
+        // return ans;
+
+        //? ------- Space Opt --------
 
         int ans = solveUsingTabulation(n);
         return ans;
     }
 };
-
 int main()
 {
     return 0;

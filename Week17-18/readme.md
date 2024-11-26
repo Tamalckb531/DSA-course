@@ -6,6 +6,8 @@
 
 <b>Bottom-up approach of DP :</b> create dp array -> analyze base cases and update dp array -> check parameter and reverse it and run a loop <br/>
 
+<b>Space Optimization approach of DP :</b>dry run the logical part under loop of Bottom-up -> find pattern -> optimize the space using it<br/>
+
 **LeetCode 509. Fibonacci Number[problem](https://leetcode.com/problems/fibonacci-number/)**
 
 ## DP 2
