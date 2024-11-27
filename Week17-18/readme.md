@@ -20,6 +20,8 @@
 
 ## DP 3
 
+**GFG. 0 - 1 Knapsack Problem[problem](https://www.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1)**
+
 ## DP 4
 
 ## DP 5
