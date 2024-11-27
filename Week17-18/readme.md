@@ -24,6 +24,8 @@
 
 **GFG. Painting the Fence[problem](https://www.geeksforgeeks.org/problems/painting-the-fence3727/1)**
 
+**LeetCode 416. Partition Equal Subset Sum[problem](https://leetcode.com/problems/partition-equal-subset-sum/)**
+
 ## DP 4
 
 ## DP 5
