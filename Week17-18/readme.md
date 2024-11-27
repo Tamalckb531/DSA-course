@@ -16,6 +16,8 @@
 
 **LeetCode 322. Coin Change[problem](https://leetcode.com/problems/coin-change/)**
 
+**LeetCode 300. Longest Increasing Subsequence[problem](https://leetcode.com/problems/longest-increasing-subsequence//)**
+
 ## DP 3
 
 ## DP 4
