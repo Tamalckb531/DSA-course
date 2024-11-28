@@ -30,6 +30,8 @@
 
 ## DP 4
 
+**LeetCode 1143. Longest Common Subsequence[problem](https://leetcode.com/problems/longest-common-subsequence/)**
+
 ## DP 5
 
 ## DP 6
