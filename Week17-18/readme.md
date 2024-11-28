@@ -26,6 +26,8 @@
 
 **LeetCode 416. Partition Equal Subset Sum[problem](https://leetcode.com/problems/partition-equal-subset-sum/)**
 
+**LeetCode 1155. Number of Dice Rolls With Target Sum[problem](https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/)**
+
 ## DP 4
 
 ## DP 5
