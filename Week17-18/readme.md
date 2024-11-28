@@ -32,6 +32,8 @@
 
 **LeetCode 1143. Longest Common Subsequence[problem](https://leetcode.com/problems/longest-common-subsequence/)**
 
+**LeetCode 1691. Maximum Height by Stacking Cuboids [problem](https://leetcode.com/problems/maximum-height-by-stacking-cuboids/)**
+
 ## DP 5
 
 ## DP 6
