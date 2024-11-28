@@ -38,6 +38,8 @@
 
 **LeetCode 375. Guess Number Higher or Lower II [problem](https://leetcode.com/problems/guess-number-higher-or-lower-ii//)**
 
+**LeetCode 1130. Minimum Cost Tree From Leaf Values [problem](https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/) needs to be understand**
+
 ## DP 6
 
 # Week 17-18 (Mega class):
