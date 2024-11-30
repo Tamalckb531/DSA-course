@@ -44,6 +44,8 @@
 
 **LeetCode 44. Wildcard Matching [problem](https://leetcode.com/problems/wildcard-matching/)**
 
+**LeetCode 10. Regular Expression Matching [problem](https://leetcode.com/problems/regular-expression-matching/)**
+
 # Week 17-18 (Mega class):
 
 # Week 17-18 (assignment):
