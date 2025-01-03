@@ -26,6 +26,7 @@ int main()
     // cout << "a:" << a << ", b:" << b << endl;
 
     // 4. XOR bitwise method, interview question????????
+    //? a^a =
     int a = 5, b = 6;
     a = a ^ b;
     b = b ^ a;

@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+/*
 void ExtremePrint(int arr[], int n)
 {
     int left = 0;
@@ -20,6 +21,26 @@ void ExtremePrint(int arr[], int n)
         right--;
     }
 }
+*/
+
+void ExtremePrint(int arr[], int size)
+{
+    int left = 0;
+    int right = size - 1;
+
+    while (left <= right)
+    {
+        if (left == right)
+        {
+            cout << arr[left++] << " ";
+            break;
+        }
+
+        cout << arr[left++] << " ";
+        cout << arr[right--] << " ";
+    }
+}
+
 int main()
 {
 

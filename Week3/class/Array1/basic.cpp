@@ -14,7 +14,7 @@ int main()
     cout << "Array 1!" << endl;
 
     /*
-        //? creation
+        ? creation
         int arr[10];
         int brr[] = {1, 2, 3, 4, 5};
 
@@ -24,7 +24,7 @@ int main()
     */
 
     /*
-        //? fill
+        ? fill
 
         int arr[4];
 
@@ -36,7 +36,7 @@ int main()
 
     /*
 
-    //? input taking
+    ? input taking
 
     int arr[5];
     for (int i = 0; i < 5; i++)
