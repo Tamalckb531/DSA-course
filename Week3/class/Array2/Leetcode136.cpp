@@ -1,15 +1,16 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
-int singleNumber(int nums[], int size)
+int singleNumber(vector<int> &nums)
 {
-    int ans = 0;
-    for (int i = 0; i < size; i++)
+    int single = 0;
+    for (int i = 0; i < nums.size(); i++)
     {
-        ans = ans ^ nums[i];
+        single = single ^ nums[i];
     }
 
-    return ans;
+    return single;
 }
 
 int main()
