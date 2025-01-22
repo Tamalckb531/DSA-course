@@ -30,12 +30,33 @@ void sortZeroOne(int nums[], int size)
     }
 }
 
+void sortZeroOnePrac(int nums[], int size)
+{
+    int zeroCount = 0;
+
+    for (int i = 0; i < size; i++)
+    {
+        if (nums[i] == 0)
+            zeroCount++;
+    }
+
+    for (int i = 0; i < zeroCount; i++)
+    {
+        nums[i] = 0;
+    }
+
+    for (int i = zeroCount; i < size; i++)
+    {
+        nums[i] = 1;
+    }
+}
+
 int main()
 {
     int arr[] = {0, 1, 1, 1, 0, 0, 1};
     int size = 7;
 
-    sortZeroOne(arr, size);
+    sortZeroOnePrac(arr, size);
 
     // printing the array -> should be {0,0,0,1,1,1,1}
     for (int i = 0; i < size; i++)
