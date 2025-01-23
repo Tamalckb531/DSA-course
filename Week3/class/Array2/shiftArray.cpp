@@ -51,6 +51,7 @@ int main()
     rotateArray(arr, size, shift);
 
     cout << "After : " << endl;
+    //? should be like this : {50, 60, 10, 20, 30, 40}
     for (int i = 0; i < size; i++)
     {
         cout << arr[i] << " ";

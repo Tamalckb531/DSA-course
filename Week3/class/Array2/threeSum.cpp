@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 void printThreeSum(int arr[], int n, int target)
@@ -16,6 +17,30 @@ void printThreeSum(int arr[], int n, int target)
             }
         }
     }
+}
+
+vector<vector<int>> threeSum(vector<int> &nums)
+{
+    int s = nums.size();
+    vector<vector<int>> ans;
+    for (int i = 0; i < s; i++)
+    {
+        for (int j = 0; j < s; j++)
+        {
+            for (int k = 0; k < s; j++)
+            {
+                if ((i != j) && (j != k) && (k != i) && (nums[i] + nums[j] + nums[k] == 0))
+                {
+                    vector<int> temp;
+                    temp.push_back(i);
+                    temp.push_back(j);
+                    temp.push_back(k);
+                    ans.push_back(temp);
+                }
+            }
+        }
+    }
+    return ans;
 }
 
 int main()
