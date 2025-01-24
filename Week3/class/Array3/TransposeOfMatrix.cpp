@@ -48,6 +48,28 @@ void transposeMatrix2(int arr[][3], int rowSize, int colSize)
     }
 }
 
+void transposeMatrixPrac(int arr[][3], int rowSize, int colSize)
+{
+    //? swap with upper triangle -> getting rid of double swap
+    for (int i = 0; i < rowSize; i++)
+    {
+        for (int j = i; j < colSize; j++)
+        {
+            swap(arr[i][j], arr[j][i]);
+        }
+    }
+
+    //? Printing the array
+    for (int i = 0; i < rowSize; i++)
+    {
+        for (int j = 0; j < colSize; j++)
+        {
+            cout << arr[i][j] << " ";
+        }
+        cout << endl;
+    }
+}
+
 int main()
 {
     cout << "Transpose of Matrix" << endl;
@@ -61,6 +83,6 @@ int main()
     int colSize = 3;
 
     // transposeMatrix(arr, rowSize, colSize);
-    transposeMatrix2(arr, rowSize, colSize);
+    transposeMatrixPrac(arr, rowSize, colSize);
     return 0;
 }
