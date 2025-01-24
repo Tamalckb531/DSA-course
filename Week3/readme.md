@@ -141,7 +141,7 @@ We need cut the last elements according to the place mentioned and save it on so
 2. Fixed array created so SC : O(1)
 <hr/>
 
-## Array 3
+## Array 3 -> Revision done
 
 **Basic :**
 
