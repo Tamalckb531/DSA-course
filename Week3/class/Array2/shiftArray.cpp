@@ -34,12 +34,37 @@ void rotateArray(int arr[], int size, int shift)
     }
 }
 
+void rotateArrayPrac(int arr[], int size, int shift)
+{
+    //? step 1 : count the finalShift for optimal shifting
+
+    int finalShift = shift % size;
+
+    //? step 2 : move the items to shift in a temp array
+    int temp[1000];
+    int tmpIndex = 0;
+    for (int i = size - finalShift; i < size; i++)
+    {
+        temp[tmpIndex++] = arr[i];
+    }
+    //? step 3 : shift the other items from left to right
+    for (int i = size - 1; i >= finalShift; i--)
+    {
+        arr[i] = arr[i - finalShift];
+    }
+    //? step 4 : add the temp array item from left to right
+    for (int i = 0; i < finalShift; i++)
+    {
+        arr[i] = temp[i];
+    }
+}
+
 int main()
 {
     int arr[] = {10, 20, 30, 40, 50, 60};
     int size = 6;
     // cyclically rotate array by 2 places
-    int shift = 2;
+    int shift = 13;
 
     cout << "Before : " << endl;
     for (int i = 0; i < size; i++)
@@ -48,7 +73,7 @@ int main()
     }
 
     cout << endl;
-    rotateArray(arr, size, shift);
+    rotateArrayPrac(arr, size, shift);
 
     cout << "After : " << endl;
     //? should be like this : {50, 60, 10, 20, 30, 40}
