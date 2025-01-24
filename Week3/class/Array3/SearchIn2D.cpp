@@ -17,6 +17,20 @@ bool searchIn2D(int arr[][4], int rowSize, int colSize, int target)
     return false;
 }
 
+bool searchIn2DPrac(int arr[][4], int rowSize, int colSize, int target)
+{
+    for (int row = 0; row < rowSize; row++)
+    {
+        for (int col = 0; col < colSize; col++)
+        {
+            if (arr[row][col] == target)
+                return true;
+        }
+    }
+
+    return false;
+}
+
 int main()
 {
 
@@ -33,9 +47,9 @@ int main()
 
     int rowSize = 3;
     int colSize = 4;
-    int target = 59;
+    int target = 33;
 
-    bool ans = searchIn2D(arr, rowSize, colSize, target);
+    bool ans = searchIn2DPrac(arr, rowSize, colSize, target);
 
     cout << "ans is: " << ans << endl;
 
