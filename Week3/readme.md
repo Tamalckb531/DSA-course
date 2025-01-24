@@ -6,7 +6,7 @@ _Complexity Rank_
 
 LOW ::: O(1) -> O(logn) -> O(root(n)) -> O(n) -> O(n) -> O(nlogn) -> O(n^2) -> O(n^3) -> O(2^n) -> O(n!) -> O(n^n) ::: HIGH
 
-## Array 1
+## Array 1 -> Revision done
 
 **IMP notes :**
 
@@ -49,7 +49,7 @@ A special technique to solve problems. Here we take two variable and point one o
 
 <hr/>
 
-## Array 2
+## Array 2 -> Revision done
 
 **LeetCode 136 - singleNumber :**
 
