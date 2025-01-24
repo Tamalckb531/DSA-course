@@ -16,6 +16,21 @@ int searchIn2D(int arr[][4], int rowSize, int colSize)
     return minValue;
 }
 
+int searchIn2DPrac(int arr[][4], int rowSize, int colSize)
+{
+
+    int minVal = INT_MAX;
+    for (int i = 0; i < rowSize; i++)
+    {
+        for (int j = 0; j < colSize; j++)
+        {
+            if (arr[i][j] < minVal)
+                minVal = arr[i][j];
+        }
+    }
+    return minVal;
+}
+
 int main()
 {
 
@@ -33,7 +48,7 @@ int main()
     int rowSize = 3;
     int colSize = 4;
 
-    int ans = searchIn2D(arr, rowSize, colSize);
+    int ans = searchIn2DPrac(arr, rowSize, colSize);
 
     cout << "ans is: " << ans << endl;
 
