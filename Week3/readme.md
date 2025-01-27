@@ -217,7 +217,7 @@ There is an array where we need to return the pivot index. The pivot index is th
 
 1. Nested loop needed. internal Loop :
    1. For left sum : j -> 0---i
-   2. For left sum : j -> i+1---n
+   2. For right sum : j -> i+1---n
    3. Not including the ith element as it could be the pivot.
 2. If left sum = right sum then return the i which is the pivot.
 

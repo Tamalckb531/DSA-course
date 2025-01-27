@@ -27,6 +27,34 @@ int bruteforce(vector<int> &nums)
     }
 }
 
+int bruteForcePrac(vector<int> &nums)
+{
+    int size = nums.size();
+    for (int i = 0; i < size; i++)
+    {
+        int leftSum = 0;
+        int rightSum = 0;
+
+        //? counting left sum [0,i)
+        for (int j = 0; j < i; j++)
+        {
+            leftSum += nums[j];
+        }
+
+        //? counting right sum [i+1,size)
+        for (int j = i + 1; j < size; j++)
+        {
+            rightSum += nums[j];
+        }
+
+        //! can't take the i as the i can be potential pivot index and pivot index number can't be included
+
+        //? condition of pivot index
+        if (leftSum == rightSum)
+            return i;
+    }
+}
+
 int PrefixSum(vector<int> &nums)
 {
 
@@ -49,6 +77,33 @@ int PrefixSum(vector<int> &nums)
     for (int i = 0; i < nums.size(); i++)
     {
         if (lsum[i] == rsum[i])
+            return i;
+    }
+
+    return -1;
+}
+
+int PrefixSumPrac(vector<int> &nums)
+{
+    vector<int> LSum(nums.size(), 0);
+    vector<int> RSum(nums.size(), 0);
+
+    //? for each index, store the sum of all other prev elements
+    for (int i = 1; i < LSum.size(); i++)
+    {
+        LSum[i] = nums[i - 1] + LSum[i - 1];
+    }
+
+    //? for each index, store the sum of all other next elements
+    for (int i = RSum.size() - 2; i >= 0; i++)
+    {
+        RSum[i] = nums[i + 1] + RSum[i + 1];
+    }
+
+    //? Now match if an index has same LSum and RSum
+    for (int i = 0; i < nums.size(); i++)
+    {
+        if (LSum[i] == RSum[i])
             return i;
     }
 
