@@ -33,6 +33,23 @@ int BitwiseXORMethod(vector<int> &nums)
     return ans;
 }
 
+int BitWiseXORMethodPrac(vector<int> &nums)
+{
+    int missingNum = 0;
+
+    for (int i = 0; i < nums.size(); i++)
+    {
+        missingNum ^= nums[i];
+    }
+
+    for (int i = 0; i <= nums.size(); i++)
+    {
+        missingNum ^= i;
+    }
+
+    return missingNum;
+}
+
 int main()
 {
     return 0;
