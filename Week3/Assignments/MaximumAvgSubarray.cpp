@@ -25,6 +25,54 @@ double bruteForce(vector<int> &nums, int &k)
     return maxAvg;
 }
 
+double bruteForcePractice(vector<int> &nums, int &k)
+{
+    int start = 0;
+    int end = k - 1;
+    int maxSum = INT_MIN;
+
+    while (end < nums.size())
+    {
+        int sum = 0;
+        for (int i = start; i <= end; i++)
+        {
+            sum += nums[i];
+        }
+        maxSum = max(maxSum, sum);
+        start++;
+        end++;
+    }
+
+    double maxAvg = maxSum / (double)k;
+    return maxAvg;
+}
+
+double slidingWindowPractice(vector<int> &nums, int &k)
+{
+    int start = 0;
+    int end = k - 1;
+    int maxSum;
+    int compareSum = 0;
+
+    for (int i = start; i <= end; i++)
+    {
+        compareSum += nums[i];
+    }
+    maxSum = compareSum;
+    end++;
+
+    while (end < nums.size())
+    {
+        compareSum = compareSum + nums[end] - nums[start];
+        maxSum = max(maxSum, compareSum);
+        start++;
+        end++;
+    }
+
+    double maxAvg = maxSum / (double)k;
+    return maxAvg;
+}
+
 double slidingWindow(vector<int> &nums, int &k)
 {
     int i = 0;
