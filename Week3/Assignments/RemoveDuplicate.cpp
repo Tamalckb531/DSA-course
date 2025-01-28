@@ -22,6 +22,26 @@ int removeDuplicates(vector<int> &nums)
     return unique + 1;
 }
 
+int removeDuplicatesPractice(vector<int> &nums)
+{
+    int uniqueElementIndex = 0; //? taking first element unique
+    int traversalIndex = 1;     //? as first element is unique so traversing from the second index
+
+    while (traversalIndex < nums.size())
+    {
+        if (nums[uniqueElementIndex] == nums[traversalIndex])
+            traversalIndex++;
+        else
+        {
+            // uniqueElementIndex++;
+            nums[++uniqueElementIndex] = nums[traversalIndex++];
+            // traversalIndex++;
+        }
+    }
+
+    return uniqueElementIndex + 1; //? as index starts from 0
+}
+
 int main()
 {
     return 0;
