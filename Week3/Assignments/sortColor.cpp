@@ -70,6 +70,32 @@ void threePointerApproach(vector<int> &nums)
     }
 }
 
+void DutchNationalFlagApproach(vector<int> &nums)
+{
+    int zeroIndex, traverseIndex, twoIndex;
+    zeroIndex = traverseIndex = 0;
+    twoIndex = nums.size() - 1;
+
+    while (traverseIndex <= twoIndex)
+    {
+        if (nums[traverseIndex] == 0)
+        {
+            swap(nums[traverseIndex], nums[zeroIndex]);
+            traverseIndex++;
+            zeroIndex++;
+        }
+        else if (nums[traverseIndex] == 1)
+        {
+            traverseIndex++;
+        }
+        else
+        {
+            swap(nums[traverseIndex], nums[twoIndex]);
+            twoIndex--;
+        }
+    }
+}
+
 void sortColors(vector<int> &nums)
 {
     // countingSort(nums);

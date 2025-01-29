@@ -371,7 +371,7 @@ There is an array with 0,1,2 multiple times. Sort them in increasing order.
 # But the code do not sort in place.
 ```
 
-<i>Approach (three pointer approach) :</i>
+<i>Approach (three pointer approach || Dutch National Flag) :</i>
 
 1. See the dry run in note.
 2. Make three pointer low, medium (both pointing in first index) and high (pointing in last index).
