@@ -12,6 +12,16 @@ int findDuplicate(vector<int> &nums)
     return firstElem;
 }
 
+int findDuplicate(vector<int> &nums)
+{
+    int firstNum = nums[0];
+    while (firstNum != nums[firstNum])
+    {
+        swap(firstNum, nums[firstNum]);
+    }
+    return firstNum;
+}
+
 int main()
 {
     return 0;
