@@ -28,11 +28,32 @@ void findMissing(int *arr, int n)
     cout << endl;
 }
 
+void findMissingPrac(int *arr, int n)
+{
+    //? make all elementIndex element negative
+    //? we will count index from 1 as per range
+    for (int i = 0; i < n; i++)
+    {
+        int elementIndex = abs(arr[i]);
+        if (arr[elementIndex - 1] > 0)
+            arr[elementIndex - 1] *= -1;
+    }
+
+    //? now check which element is still positive and return it's index (with add 1 we counting index from 1)
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] > 0)
+            cout << i + 1 << " ";
+    }
+
+    cout << endl;
+}
+
 int main()
 {
     int n;
-    int arr[] = {1, 3, 5, 3, 3};
+    int arr[] = {3, 3, 3, 3, 3};
     n = sizeof(arr) / sizeof(int);
-    findMissing(arr, n);
+    findMissingPrac(arr, n);
     return 0;
 }
