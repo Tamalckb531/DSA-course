@@ -458,7 +458,8 @@ An array given has one integer more than one time and some element's are missing
 + SC: O(1) -> ok.
 ```
 
-**GFG. First Repeating Element (<a href="https://www.geeksforgeeks.org/problems/first-repeating-element4018/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article">problem</a>):**
+**GFG. First Repeating Element (<a href="https://www.geeksforgeeks.org/problems/first-repeating-element4018/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on
+_article">problem</a>):**
 
 <i>Question understand :</i>
 An array is given with multiple element repeating themselves. Now we need to return the index of leftMost repeated element.
