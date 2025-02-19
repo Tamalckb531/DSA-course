@@ -1,4 +1,4 @@
-# Week 3 (class) :
+# Week 3 (class) -> DONE :
 
 ## Space and Time complexity :
 
@@ -170,7 +170,7 @@ Init INT_MAX in minValue -> compare each value of array with minValue with min()
 
 2. If you can't use newArray than make the upper right triangle nested loop pattern and swap(arr[i][j], arr[j][i]) .
 
-# Week3 (Assignments) :
+# Week3 (Assignments) -> Revision done :
 
 **Key pair GFG (<a href="https://www.geeksforgeeks.org/problems/key-pair5616/1?ref=gcse">Problem</a>)**
 
