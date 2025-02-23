@@ -2,91 +2,67 @@
 #include <vector>
 using namespace std;
 
-int getPivotIndex(vector<int> &arr)
+int pivotFinder(vector<int> &nums, int start, int end)
 {
-    int n = arr.size();
-    int start = 0;
-    int end = n - 1;
     int mid = start + (end - start) / 2;
 
     while (start <= end)
     {
-        // edge case for one element
+        //? one element edge case:
         if (start == end)
-        {
             return start;
-        }
-        // if mid is the pivot
-        if (mid + 1 < n && arr[mid] > arr[mid + 1])
-        {
-            return mid;
-        }
-        // if mid is in the right side
-        else if (arr[start] > arr[mid])
-        {
-            end = mid - 1;
-        }
-        // if mid is in the left side
-        else
-        {
-            start = mid + 1;
-        }
 
-        // mid update
+        //? mid is the pivot
+        if (mid + 1 <= end && nums[mid] > nums[mid + 1])
+            return mid;
+
+        //? mid is in the right
+        else if (nums[mid] < nums[start])
+            end = mid - 1;
+
+        //? mid is in the left
+        else
+            start = mid + 1;
+
         mid = start + (end - start) / 2;
     }
 
     return -1;
 }
 
-int binarySearch(int start, int end, vector<int> &arr, int target)
+int binarySearch(vector<int> &nums, int start, int end, int target)
 {
     int mid = start + (end - start) / 2;
 
     while (start <= end)
     {
-        if (arr[mid] == target)
-        {
+        if (nums[mid] == target)
             return mid;
-        }
-        if (arr[mid] < target)
-        {
+        else if (target > nums[mid])
             start = mid + 1;
-        }
         else
-        {
             end = mid - 1;
-        }
         mid = start + (end - start) / 2;
     }
 
     return -1;
 }
 
-int search(vector<int> &nums, int target)
+int searchPractice(vector<int> &nums, int target)
 {
-    // Step 1: get the pivot
-    int pivotIndex = getPivotIndex(nums);
+    int end = nums.size() - 1;
+    int pivotIndex = pivotFinder(nums, 0, end);
 
-    // Step 2: find the target
-    int n = nums.size();
-
-    // if target left side of pivot
+    //? target in 0 to pivotIndex range
     if (target >= nums[0] && target <= nums[pivotIndex])
-    {
-        int targetIndex = binarySearch(0, pivotIndex, nums, target);
-        return targetIndex;
-    }
+        return binarySearch(nums, 0, pivotIndex, target);
 
-    // if target right side of pivot
-    if (pivotIndex + 1 < n && target >= nums[pivotIndex + 1] && target <= nums[n - 1])
-    {
-        int targetIndex = binarySearch(pivotIndex + 1, n - 1, nums, target);
-        return targetIndex;
-    }
+    //? target in pivotIndex+1 to end range
+    if (pivotIndex + 1 <= end && target >= nums[pivotIndex + 1] && target <= nums[end])
+        return binarySearch(nums, pivotIndex + 1, end, target);
+
     return -1;
 }
-
 int main()
 {
     return 0;
