@@ -1,5 +1,5 @@
 #include <iostream>
-#include <vecotor>
+#include <vector>
 using namespace std;
 
 int getPivotIndex(vector<int> &arr)
