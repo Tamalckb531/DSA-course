@@ -32,10 +32,39 @@ double mySqrt(int x)
     return ans;
 }
 
+double SqrtPractice(int num)
+{
+    int start = 0;
+    int end = num; //? creation of search space;
+    long long int mid = start + (end - start) / 2;
+    long long int squareRoot = -1;
+
+    while (start <= end)
+    {
+        if (mid * mid == num)
+            return mid;
+        else if (mid * mid < num)
+        {
+            //? mid in left -> store and compute -> search in right
+            squareRoot = mid;
+            start = mid + 1;
+        }
+        else
+        {
+            //? mid in right -> search in left
+            end = mid - 1;
+        }
+        mid = start + (end - start) / 2;
+    }
+
+    return squareRoot;
+}
+
 int main()
 {
     int num = 54;
     double ans = mySqrt(num);
-    cout << ans << endl;
+    double ans2 = SqrtPractice(num);
+    cout << ans << " , " << ans2 << endl;
     return 0;
 }
