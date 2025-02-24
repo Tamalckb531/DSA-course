@@ -44,12 +44,38 @@ int divisionAlgo(int dividend, int divisor)
     return ans;
 }
 
+int divisionAlgoPractice(int dividend, int divisor)
+{
+    int start = 0;
+    int end = dividend;
+    int mid = start + start + ((end - start) >> 1);
+
+    int storeAns = -1;
+
+    while (start <= end)
+    {
+        if (mid * divisor == dividend)
+            return mid;
+        else if (mid * divisor < dividend)
+        {
+            storeAns = mid;
+            start = mid + 1;
+        }
+        else
+            end = mid - 1;
+
+        mid = start + start + ((end - start) >> 1);
+    }
+
+    return storeAns;
+}
+
 int main()
 {
     int dividend = 15;
     int divisor = 5;
 
-    int ans = divisionAlgo(abs(dividend), abs(divisor));
+    int ans = divisionAlgoPractice(abs(dividend), abs(divisor));
 
     // negative handling :
     if ((dividend < 0 && divisor > 0) || (dividend > 0 && divisor < 0))
