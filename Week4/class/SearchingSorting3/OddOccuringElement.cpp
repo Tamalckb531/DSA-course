@@ -81,12 +81,6 @@ int findOddOccurringElement(vector<int> &nums, int size)
 }
 int main()
 {
-    int arr[] = {1, 2, 2, 3, 3, 4, 4, 5, 5, 3, 3};
-    int size = 11;
-
-    int ans = findOddOccurringElement(arr, size);
-    cout << "ans index : " << ans << endl;
-    cout << "ans element : " << arr[ans] << endl;
 
     return 0;
 }

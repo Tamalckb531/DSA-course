@@ -16,34 +16,6 @@
 #include <vector>
 using namespace std;
 
-int divisionAlgo(int dividend, int divisor)
-{
-    int s = 0;
-    int e = dividend;
-    int midQuotient = s + ((e - s) >> 1);
-    int ans = -1;
-
-    while (s <= e)
-    {
-        if ((divisor * midQuotient) == dividend)
-        {
-            return midQuotient;
-        }
-        else if ((divisor * midQuotient) < dividend)
-        {
-            ans = midQuotient;
-            s = midQuotient + 1;
-        }
-        else
-        {
-            e = midQuotient - 1;
-        }
-        midQuotient = s + ((e - s) >> 1);
-    }
-
-    return ans;
-}
-
 int divisionAlgoPractice(int dividend, int divisor)
 {
     int start = 0;
@@ -85,4 +57,32 @@ int main()
 
     cout << "Final Ans: " << ans << endl;
     return 0;
+}
+
+int divisionAlgo(int dividend, int divisor)
+{
+    int s = 0;
+    int e = dividend;
+    int midQuotient = s + ((e - s) >> 1);
+    int ans = -1;
+
+    while (s <= e)
+    {
+        if ((divisor * midQuotient) == dividend)
+        {
+            return midQuotient;
+        }
+        else if ((divisor * midQuotient) < dividend)
+        {
+            ans = midQuotient;
+            s = midQuotient + 1;
+        }
+        else
+        {
+            e = midQuotient - 1;
+        }
+        midQuotient = s + ((e - s) >> 1);
+    }
+
+    return ans;
 }

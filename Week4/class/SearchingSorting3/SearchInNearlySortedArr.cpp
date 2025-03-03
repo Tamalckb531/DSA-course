@@ -7,43 +7,6 @@ using namespace std;
 // Input arr[] = {10,3,40,20,60,80,70}, key = 40
 // Output : 2
 
-int binary_search(int arr[], int size, int target)
-{
-    int start = 0;
-    int end = size - 1;
-    int mid = start + (end - start) / 2;
-
-    while (start <= end)
-    {
-        if (arr[mid] == target)
-        {
-            return mid;
-        }
-        if (arr[mid + 1] == target)
-        {
-            return mid + 1;
-        }
-        if (arr[mid - 1] == target)
-        {
-            return mid - 1;
-        }
-
-        // left
-        if (arr[mid] > target)
-        {
-            end = mid - 2;
-        }
-        // right
-        else
-        {
-            start = mid + 2;
-        }
-
-        mid = start + (end - start) / 2;
-    }
-    return -1;
-}
-
 int binary_searchPractice(int arr[], int size, int target)
 {
     int start = 0;
@@ -82,4 +45,41 @@ int main()
     cout << "Target Index in this nearly sorted array is: " << targetIndex << endl;
 
     return 0;
+}
+
+int binary_search(int arr[], int size, int target)
+{
+    int start = 0;
+    int end = size - 1;
+    int mid = start + (end - start) / 2;
+
+    while (start <= end)
+    {
+        if (arr[mid] == target)
+        {
+            return mid;
+        }
+        if (arr[mid + 1] == target)
+        {
+            return mid + 1;
+        }
+        if (arr[mid - 1] == target)
+        {
+            return mid - 1;
+        }
+
+        // left
+        if (arr[mid] > target)
+        {
+            end = mid - 2;
+        }
+        // right
+        else
+        {
+            start = mid + 2;
+        }
+
+        mid = start + (end - start) / 2;
+    }
+    return -1;
 }
