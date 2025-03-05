@@ -50,13 +50,61 @@ double myPrecisionSqrt(int n)
     return sqrt;
 }
 
+int mySqrtPractice(int n)
+{
+    int start = 0;
+    int end = n;
+    int mid = start + (end - start) / 2;
+    int ans = 0;
+
+    while (start <= end)
+    {
+        if (mid * mid == n)
+            return mid;
+        else if (mid * mid < n)
+        {
+            ans = mid;
+            start = mid + 1;
+        }
+        else
+            end = mid - 1;
+
+        mid = start + (end - start) / 2;
+    }
+    return ans;
+}
+
+double myPrecisionSqrtPractice(int n)
+{
+    double mainRoot = mySqrtPractice(n);
+    int precession = 3;
+    double fractionPoint = 0.1;
+
+    while (precession)
+    {
+        double temp = mainRoot;
+        while (temp * temp <= n)
+        {
+            mainRoot = temp;
+            temp += fractionPoint;
+        }
+        fractionPoint /= 10;
+
+        precession--;
+    }
+
+    return mainRoot;
+}
+
 int main()
 {
 
     int n = 63;
     double root = myPrecisionSqrt(n);
+    double root2 = myPrecisionSqrtPractice(n);
 
     cout << root << endl;
+    cout << root2 << endl;
 
     return 0;
 }
