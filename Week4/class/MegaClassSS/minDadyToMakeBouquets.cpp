@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 bool canMakeBouquet(vector<int> &bloomDay, int bouquet, int flower, int day)
@@ -62,6 +63,62 @@ int minDays(vector<int> &bloomDay, int m, int k)
         }
 
         day = start + (end - start) / 2;
+    }
+
+    return ans;
+}
+
+bool canMakeBouquets(vector<int> &bloomDay, int bouquets, int flowers, int days)
+{
+    int count = 0;
+
+    for (int i = 0; i < bloomDay.size(); i++)
+    {
+        if (days >= bloomDay[i])
+            count++;
+
+        if (count == flowers)
+        {
+            bouquets--; //? one bouquet ready
+            count = 0;  //? start for next bouquet
+            if (bouquets == 0)
+                break; //? no more bouquet to make
+        }
+
+        if (days < bloomDay[i])
+            count = 0; //? non adjacent flower
+    }
+
+    return bouquets == 0;
+}
+
+int minDays(vector<int> &bloomDay, int m, int k)
+{
+    long long int bouquets = m;
+    long long int flowers = k;
+    long long int totalFlowersNeed = bouquets * flowers;
+
+    if (totalFlowersNeed > bloomDay.size())
+        return -1;
+
+    int start = *min_element(bloomDay.begin(), bloomDay.end());
+    int end = *max_element(bloomDay.begin(), bloomDay.end());
+    int days = start + (end - start) / 2;
+    int ans = -1;
+
+    while (start <= end)
+    {
+        if (canMakeBouquets(bloomDay, bouquets, flowers, days))
+        {
+            ans = days;
+            end = days - 1;
+        }
+        else
+        {
+            start = days + 1;
+        }
+
+        days = start + (end - start) / 2;
     }
 
     return ans;
