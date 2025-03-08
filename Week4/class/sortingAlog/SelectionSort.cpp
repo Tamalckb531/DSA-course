@@ -32,11 +32,30 @@ void selectionSort(vector<int> &v)
         }
     }
 }
+void selectionSortPractice(vector<int> &v)
+{
+    int endIndex = v.size() - 1;
+    for (int i = 0; i < endIndex; i++) //? this target each element from left to right -> no need for the last element as we sorting from left to right, right element will be automatically sorted
+    {
+        int currMinIndex = i; //? target the ith element first and later store the smaller to smallest element from the right part
+
+        for (int j = i + 1; j <= endIndex; j++) //? target the right part of an element -> here we find the smallest element and put it in the currMinIndex
+        {
+            if (v[j] < v[currMinIndex])
+            {
+                swap(v[j], v[currMinIndex]);
+            }
+        }
+    }
+}
 
 int main()
 {
-    vector<int> v = {55, 45, 82, 96, 12, 103, -10, 78, 54, -64, 3};
-    selectionSort(v);
-    print(v);
+    vector<int> v1 = {5, 8, 4, 9, 3};
+    vector<int> v2 = {5, 8, 4, 9, 3};
+    selectionSort(v1);
+    selectionSortPractice(v2);
+    print(v1);
+    print(v2);
     return 0;
 }
