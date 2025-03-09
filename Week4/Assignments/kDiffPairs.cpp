@@ -39,6 +39,43 @@ int twoPointerApproach(vector<int> &nums, int k)
     return ans.size();
 }
 
+int twoPointerApproachPractice(vector<int> &nums, int diff)
+{
+    sort(nums.begin(), nums.end());
+
+    int diffReduce = 0;
+    int diffExpand = 1;
+
+    set<pair<int, int>> ans;
+
+    while (diffExpand < nums.size())
+    {
+        int currDiff = nums[diffExpand] - nums[diffReduce];
+
+        if (currDiff == diff)
+        {
+            //? got one solution
+            ans.insert({nums[diffReduce], nums[diffExpand]});
+            diffReduce++;
+            diffExpand++;
+        }
+        else if (currDiff > diff)
+        {
+            //? need reduce diff
+            diffReduce++;
+        }
+        else
+        {
+            diffExpand++;
+        }
+
+        if (diffReduce == diffExpand)
+            diffExpand++; //? diff = 0 condition handled
+    }
+
+    return ans.size();
+}
+
 bool binarySearch(vector<int> &nums, int start, int rightSideVal)
 {
     int end = nums.size() - 1;
