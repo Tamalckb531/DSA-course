@@ -35,13 +35,13 @@ int expSearch(int arr[], int size, int elem)
 
     while (i < size && arr[i] <= elem)
     {
-        i = i * 2;
+        i = i * 2; //? for getting the range like : 1-2, 2-4, 4-8, 8-16, 16-32 etc
     }
 
-    int startIndex = i / 2;
-    int endIndex = min(i, size - 1);
+    int startIndex = i / 2;          //? startvalue of the desired range
+    int endIndex = min(i, size - 1); //? endvalue of the desired range, but it can go beyond size so the min
 
-    return Binary_Search(arr, startIndex, endIndex, elem);
+    return Binary_Search(arr, startIndex, endIndex, elem); //? search only for the range
 }
 
 int main()
