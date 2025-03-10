@@ -1,5 +1,6 @@
 #include <iostream>
 #include <numeric>
+#include <vector>
 using namespace std;
 
 bool isPaintingPossible(int arr[], int totalBoards, int totalPainters, long long int minBoardLengthTime)
@@ -53,6 +54,63 @@ long long minTime(int arr[], int n, int k)
         }
 
         mid = start + (end - start) / 2;
+    }
+
+    return ans;
+}
+
+bool isPossibleToPaintPractice(vector<int> &board, int minimumLength, int totalBoards, int totalPainters)
+{
+    int lengthCount = 0;
+    int painter = 1;
+
+    for (int i = 0; i < totalBoards; i++)
+    {
+        if (board[i] > minimumLength)
+            return false;
+
+        if (lengthCount + board[i] > minimumLength)
+        {
+            painter++;
+            lengthCount = board[i];
+
+            if (painter > totalPainters)
+                return false;
+        }
+        else
+        {
+            lengthCount += board[i];
+        }
+    }
+
+    return true;
+}
+
+int minTime(vector<int> &arr, int k)
+{
+    int totalBoards = arr.size();
+    int totalPainters = k;
+
+    //? search space for board length
+    int start = 0;
+    int end = accumulate(arr.begin(), arr.end(), 0);
+    int mid = start + (end - start) / 2;
+    int ans = 0;
+
+    while (start <= end)
+    {
+        if (isPossibleToPaintPractice(arr, mid, totalBoards, totalPainters))
+        {
+            ans = mid;
+            end = mid - 1;
+        }
+        else
+        {
+            start = mid + 1;
+        }
+
+        mid = start + (end - start) / 2;
+        ;
     }
 
     return ans;
