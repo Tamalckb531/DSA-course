@@ -1,3 +1,5 @@
+### Starting revision
+
 # Week 3 (class) -> DONE :
 
 ## Space and Time complexity :
