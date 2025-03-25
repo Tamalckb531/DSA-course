@@ -24,7 +24,7 @@ bool twoPointerKeyPair(int arr[], int n, int x)
 bool hasArrayTwoCandidates(int arr[], int n, int x)
 {
     // code here
-    std::sort(arr, arr + n);
+    sort(arr, arr + n);
     return twoPointerKeyPair(arr, n, x);
 }
 
@@ -41,7 +41,7 @@ bool twoPointerCheck(vector<int> &arr, int target)
         else if (arr[low] + arr[high] < target)
             low++;
         else if (arr[low] + arr[high] > target)
-            high++;
+            high--;
     }
     return false;
 }
