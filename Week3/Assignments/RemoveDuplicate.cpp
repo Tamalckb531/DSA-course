@@ -33,9 +33,9 @@ int removeDuplicatesPractice(vector<int> &nums)
             traversalIndex++;
         else
         {
-            // uniqueElementIndex++;
-            nums[++uniqueElementIndex] = nums[traversalIndex++];
-            // traversalIndex++;
+            uniqueElementIndex++;
+            nums[uniqueElementIndex] = nums[traversalIndex];
+            traversalIndex++;
         }
     }
 
