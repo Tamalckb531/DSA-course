@@ -435,6 +435,8 @@ Sent the first element on it's equal index (like if the first element is 3 than 
 + SC: O(1) -> ok.
 ```
 
+### ToolTip
+
 **Missing Element from and Array with Duplicates :**
 
 <i>Question understand :</i>

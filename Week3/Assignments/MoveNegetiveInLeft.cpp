@@ -25,28 +25,6 @@ void moveAllNegToLeft(int *arr, int n)
     }
 }
 
-void moveAllNegToLeftPrac(int *arr, int n)
-{
-    int negativeIndex = 0;
-    int positiveIndex = n - 1;
-
-    while (negativeIndex < positiveIndex)
-    {
-        if (arr[negativeIndex] > 0 && arr[positiveIndex] < 0)
-        {
-            swap(arr[negativeIndex++], arr[positiveIndex--]);
-        }
-        else if (arr[negativeIndex] < 0)
-        {
-            negativeIndex++;
-        }
-        else
-        {
-            positiveIndex--;
-        }
-    }
-}
-
 void moveAllNegToRight(int *arr, int n)
 {
     int negativeIndex = n - 1;
@@ -69,6 +47,28 @@ void moveAllNegToRight(int *arr, int n)
     }
 }
 
+void moveAllNegToLeftPrac(int *arr, int n)
+{
+    int negativeIndex = 0;
+    int positiveIndex = n - 1;
+
+    while (negativeIndex < positiveIndex)
+    {
+        if (arr[negativeIndex] > 0 && arr[positiveIndex] < 0)
+        {
+            swap(arr[negativeIndex++], arr[positiveIndex--]);
+        }
+        else if (arr[negativeIndex] < 0)
+        {
+            negativeIndex++;
+        }
+        else
+        {
+            positiveIndex--;
+        }
+    }
+}
+
 int main()
 {
     int arr[] = {1, 2, -3, 4, -5, 6};
@@ -82,7 +82,7 @@ int main()
 
     cout << endl;
 
-    moveAllNegToRight(arr, n);
+    moveAllNegToLeftPrac(arr, n);
 
     cout << "After: " << endl;
     for (int i = 0; i < n; i++)
