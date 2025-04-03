@@ -435,8 +435,6 @@ Sent the first element on it's equal index (like if the first element is 3 than 
 + SC: O(1) -> ok.
 ```
 
-### ToolTip
-
 **Missing Element from and Array with Duplicates :**
 
 <i>Question understand :</i>
@@ -515,6 +513,8 @@ Three sorted array are given where three have some common elements. We need to f
 + SC: O(n) -> ok.
 ```
 
+### should code it
+
 **LeetCode 54. Spiral Matrix (<a href="https://leetcode.com/problems/spiral-matrix/">Problem</a>) :**
 
 <i>Question understand :</i>
@@ -535,6 +535,8 @@ Given 2D matrix should printed spirally.
 + TC: O(row*col) -> Ok.
 + SC: O(row*col) -> ok.
 ```
+
+### should code it
 
 **GFG. Factorials of large numbers (<a href="https://www.geeksforgeeks.org/problems/factorials-of-large-numbers2508/1">problem</a>):**
 
