@@ -54,6 +54,8 @@ Just like previous both, call two function and get the first and last position. 
 
 ## Mega Array:
 
+/_Revision done_/
+
 **unordered_map :**
 Just watch the code for basic syntax
 
