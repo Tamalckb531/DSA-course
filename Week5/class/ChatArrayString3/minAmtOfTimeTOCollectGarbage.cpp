@@ -70,6 +70,71 @@ int garbageCollection(vector<string> &garbage, vector<int> &travel)
 
     return totalPickTime + totalTravelTime;
 }
+
+int garbageCollection(vector<string> &garbage, vector<int> &travel)
+{
+    //? Metal variable
+    int pickM = 0;
+    int travelM = 0;
+    int lastHouseM = 0;
+
+    //? Paper variable
+    int pickP = 0;
+    int travelP = 0;
+    int lastHouseP = 0;
+
+    //? Glass variable
+    int pickG = 0;
+    int travelG = 0;
+    int lastHouseG = 0;
+
+    //? add picking time
+    for (int i = 0; i < garbage.size(); i++)
+    {
+        string currentHouseGarbage = garbage[i];
+        for (int j = 0; j < currentHouseGarbage.length(); j++)
+        {
+            char garbageType = currentHouseGarbage[j];
+
+            switch (garbageType)
+            {
+            case 'M':
+                pickM++;
+                lastHouseM = i;
+                break;
+            case 'G':
+                pickG++;
+                lastHouseG = i;
+                break;
+            case 'P':
+                pickP++;
+                lastHouseP = i;
+                break;
+            }
+        }
+    }
+
+    int totalPickingTime = pickP + pickG + pickM;
+
+    //? add travel time
+    for (int i = 0; i < lastHouseP; i++)
+    {
+        travelP += travel[i];
+    }
+    for (int i = 0; i < lastHouseG; i++)
+    {
+        travelG += travel[i];
+    }
+    for (int i = 0; i < lastHouseM; i++)
+    {
+        travelM += travel[i];
+    }
+
+    int totalTravel = travelP + travelM + travelG;
+
+    return totalPickingTime + totalTravel;
+}
+
 int main()
 {
     return 0;
