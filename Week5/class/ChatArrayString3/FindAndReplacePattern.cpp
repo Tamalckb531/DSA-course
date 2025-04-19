@@ -50,6 +50,56 @@ vector<string> findAndReplacePattern(vector<string> &words, string pattern)
     return ans;
 }
 
+void normalizeStr(string &str)
+{
+    //! FLOW: Map each char of str with abc etc -> insert the mapped inside str in another loop
+
+    char start = 'a';
+    unordered_map<char, char> mapping;
+
+    //? map str in prr -> abb format
+    for (int i = 0; i < str.length(); i++)
+    {
+        char strChar = str[i];
+        if (mapping.find(strChar) == mapping.end())
+        {
+            //? not found in map
+            mapping[strChar] = start;
+            start++;
+        }
+    }
+
+    //? change str in prr to abb
+    for (int i = 0; i < str.length(); i++)
+    {
+        char mappedStrChar = mapping[str[i]];
+        str[i] = mappedStrChar;
+    }
+}
+
+vector<string> findAndReplacePattern(vector<string> &words, string pattern)
+{
+    //! FLOW: Normalize the pattern (abc format) -> Normalize each word -> match and store
+
+    vector<string> ans;
+
+    //? Normalize the pattern
+    normalizeStr(pattern);
+
+    //? Normalize each word
+    for (int i = 0; i < words.size(); i++)
+    {
+        string word = words[i];
+        normalize(word);
+
+        //? match and store
+        if (word == pattern)
+            ans.push_back(word);
+    }
+
+    return ans;
+}
+
 int main()
 {
     return 0;
