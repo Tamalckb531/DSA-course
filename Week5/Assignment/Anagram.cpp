@@ -1,4 +1,5 @@
 #include <iostream>
+#include <unordered_map>
 using namespace std;
 
 bool isAnagram(string s, string t)
@@ -21,6 +22,29 @@ bool isAnagram(string s, string t)
     for (int i = 0; i < 256; i++)
     {
         if (freqTable[i] != 0)
+            return false;
+    }
+
+    return true;
+}
+
+bool isAnagram(string s, string t)
+{
+    unordered_map<char, int> mapping;
+
+    for (int i = 0; i < s.length(); i++)
+    {
+        mapping[s[i]]++;
+    }
+
+    for (int i = 0; i < t.length(); i++)
+    {
+        mapping[t[i]]--;
+    }
+
+    for (auto pair : mapping)
+    {
+        if (pair.second != 0)
             return false;
     }
 
