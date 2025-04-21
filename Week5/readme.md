@@ -273,8 +273,6 @@ Output: "fl"
 
 <i>Question :</i>
 
-<b>Done this one</b>
-
 Given a string s, reverse only all the vowels in the string and return it.
 
 The vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both lower and upper cases, more than once.
@@ -301,8 +299,6 @@ Output: "holle"
 
 <i>Question :</i>
 
-<b>Done this one</b>
-
 Given two strings s and t, determine if they are isomorphic.
 
 Two strings s and t are isomorphic if the characters in s can be replaced to get t.
@@ -324,8 +320,6 @@ Read the code and practice. (Just copied the code. Didn't understand)
 **LeetCode 767. Reorganize String [problem](https://leetcode.com/problems/reorganize-string/)**
 
 <i>Question :</i>
-
-<b>Done this one</b>
 
 Given a string s, rearrange the characters of s so that any two adjacent characters are not the same.
 
