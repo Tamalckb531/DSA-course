@@ -1,5 +1,6 @@
 #include <string>
 #include <iostream>
+#include <unordered_map>
 
 using namespace std;
 
@@ -27,6 +28,38 @@ bool isIsomorphic(string s, string t)
 
     return true;
 }
+
+void normalizer(string &str)
+{
+    unordered_map<char, char> mapping;
+    char start = 'a';
+
+    for (int i = 0; i < str.length(); i++)
+    {
+        char strChar = str[i];
+        if (mapping.find(strChar) == mapping.end())
+        {
+            mapping[strChar] = start;
+            start++;
+        }
+    }
+
+    for (int i = 0; i < str.length(); i++)
+    {
+        char strChar = str[i];
+        str[i] = mapping[strChar];
+    }
+}
+
+bool isIsomorphic(string s, string t)
+{
+
+    normalizer(s);
+    normalizer(t);
+
+    return s == t;
+}
+
 int main()
 {
     return 0;

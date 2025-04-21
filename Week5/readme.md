@@ -244,6 +244,7 @@ Output: "Qedo1ct-eeLg=ntse-T!"
 2. SC : O(1)
 
 **LeetCode 14. Longest Common Prefix [problem](https://leetcode.com/problems/longest-common-prefix/)**
+**_Issue_**
 
 <i>Question :</i>
 
