@@ -29,6 +29,29 @@ int strStr(string haystack, string needle)
     return -1;
 }
 
+int strStrPractice(string haystack, string needle)
+{
+    int haystackSize = haystack.size();
+    int needleSize = needle.size();
+
+    int maxTraversal = haystackSize - needleSize; //? if needle in last then first index will be haystackSize - needleSize.
+
+    //? outer loop -> Full haystack traversal
+    //? inner loop -> needle traversal for match
+    for (int i = 0; i < maxTraversal; i++)
+    {
+        for (int j = 0; j < needleSize; j++)
+        {
+            if (needle[j] != haystack[i + j])
+                return -1;
+            if (j == needleSize - 1)
+                return i; //? we are in the last index so needle has been found
+        }
+    }
+
+    return -1;
+}
+
 int main()
 {
     return 0;
