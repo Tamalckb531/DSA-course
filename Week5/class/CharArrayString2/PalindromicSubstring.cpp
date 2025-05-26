@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-//? check
 
 int expandAroundCenter(string s, int i, int j)
 {
