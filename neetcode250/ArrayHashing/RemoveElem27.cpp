@@ -2,6 +2,7 @@
 #include <vector>
 using namespace std;
 
+//? My solution -> Didn't work
 int removeElement(vector<int> &nums, int val)
 {
     for (int i = 0; i < nums.size(); i++)
@@ -12,6 +13,8 @@ int removeElement(vector<int> &nums, int val)
 
     return nums.size();
 }
+
+//? Neetcode solution -> worked
 int removeElement(vector<int> &nums, int val)
 {
     int k = 0;
