@@ -24,5 +24,5 @@ vector<vector<string>> groupAnagrams(vector<string> &strs)
 
 int main()
 {
-    cout << "LeetCode 706. Design HashMap" << endl;
+    cout << "LeetCode 49. Group Anagrams" << endl;
 }
