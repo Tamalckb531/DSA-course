@@ -32,5 +32,5 @@ vector<int> productExceptSelf(vector<int> &nums)
 
 int main()
 {
-    cout << "LeetCode: Encode and Decode Strings" << endl;
+    cout << "LeetCode 238. Product of Array Except Self" << endl;
 }
