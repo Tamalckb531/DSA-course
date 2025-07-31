@@ -61,6 +61,38 @@ int trap(vector<int> &height)
 
     return waterTrapped;
 }
+
+//? Two pointer -> TC:O(n), SC:O(1)
+
+int trap(vector<int> &height)
+{
+    if (height.empty())
+        return 0;
+    int size = height.size();
+    int left = 0;
+    int right = size - 1;
+    int leftMaxWall = height[left];
+    int rightMaxWall = height[right];
+    int waterTrapped = 0;
+
+    while (left < right)
+    {
+        if (leftMaxWall < rightMaxWall)
+        {
+            left++;
+            leftMaxWall = max(height[left], leftMaxWall);
+            waterTrapped += leftMaxWall - height[left];
+        }
+        else
+        {
+            right--;
+            rightMaxWall = max(height[right], rightMaxWall);
+            waterTrapped += rightMaxWall - height[right];
+        }
+    }
+
+    return waterTrapped;
+}
 int main()
 {
     cout << "LeetCode 42. Trapping Rain Water" << endl;
