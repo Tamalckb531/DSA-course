@@ -25,6 +25,37 @@ int characterReplacement(string s, int k)
 
     return maxLength;
 }
+
+//? Sliding window: TC:O(n), SC:O(m)
+int characterReplacement(string s, int k)
+{
+    unordered_map<char, int> frequency;
+    int maxLength = 0;
+
+    int left = 0;
+    int maxFrequency = 0;
+
+    for (int r = 0; r < s.size(); r++)
+    {
+        frequency[s[r]]++;
+        maxFrequency = max(maxFrequency, frequency[s[r]]);
+
+        int subStrLen = r - left + 1;
+        int needToChange = subStrLen - maxFrequency;
+
+        while (needToChange > k)
+        {
+            frequency[s[left]]--;
+            left++;
+            subStrLen = r - left + 1;
+            needToChange = subStrLen - maxFrequency;
+        }
+
+        maxLength = max(maxLength, subStrLen);
+    }
+
+    return maxLength;
+}
 int main()
 {
     cout << "LeetCode 424. Longest Repeating Character Replacement" << endl;
